@@ -1,0 +1,83 @@
+body {
+  font-family: $montserrat-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+table,
+tbody,
+caption,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-style: inherit;
+  vertical-align: baseline;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.container {
+  max-width: 414px;
+  margin: 0 auto;
+  padding: 0 15px;
+  @media screen and (min-width: $tablet) {
+    max-width: 1024px;
+
+    padding: 0 47px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 1280px;
+
+    padding: 0 85px;
+  }
+}
+
+.btn {
+  display: block;
+  margin: 0 auto;
+  padding: 14px 0;
+  min-width: 236px;
+
+  background-color: $black;
+  border: 2px solid $background-light-lemon;
+  border-radius: 25px;
+
+  font-family: $montserrat-font;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: $accent-color;
+  text-align: center;
+  &--hero {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}

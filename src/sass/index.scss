@@ -1,2 +1,38 @@
-@import './common';
-@import './example';
+@import './utils/fonts';
+@import './utils/vars';
+@import './utils/mixins';
+@import './base/common';
+@import './components/slider';
+@import './components/slider-mini';
+@import './components/slider-mini-mod';
+@import './utils/visualy-hidden';
+@import './utils/is-hidden';
+@import './base/base-set';
+@import './layout/footer';
+@import './layout/header';
+
+// -----MAIN-PAGE------ //
+@import './layout/main-page/main-page-hero';
+@import './layout/main-page/main-page-about-restaurant';
+@import './layout/main-page/main-page-details-restaurant';
+@import './layout/main-page/main-page-about-hotel';
+@import './layout/main-page/main-page-details-hotel';
+@import './layout/main-page/main-page-contacts';
+
+// -----RESTAURANT-PAGE------ //
+@import './layout/restaurant-page/restaraunt-page-hero';
+@import './layout/restaurant-page/restaraunt-page-about-kitchen';
+@import './layout/restaurant-page/restaurant-page-menu';
+
+// -----HOTEL-PAGE------ //
+@import './layout/hotel-page/hotel-page-hero';
+@import './layout/hotel-page/hotel-page-rooms';
+
+// -----ROOM-PAGE------ //
+@import './layout/room-page/room-page-hero';
+@import './layout/room-page/room-page-amenities';
+
+// -----MODAL------ //
+@import './components/modal-book-room';
+@import './components/modal-book-table';
+@import './components/modal-room-price';

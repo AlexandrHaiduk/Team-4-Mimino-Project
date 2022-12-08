@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./images/favicon/favicon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script type="module" src="./index.js"></script>
+    <script type="module" src="./js/modal-table.js"></script>
+  </head>
+
+  <body>
+    <!-- ❗️❗️❗️ Add partials like so for every page -->
+    <include src="./partials/header.html"></include>
+    <main>
+      <include
+        src="./partials/restaurant-page/restaurant-page-hero.html"
+      ></include>
+      <include
+        src="./partials/restaurant-page/restaurant-page-about-kitchen.html"
+      ></include>
+      <include
+        src="./partials/restaurant-page/restaurant-page-menu.html"
+      ></include>
+    </main>
+    <include src="./partials/footer.html"></include>
+    <include src="./partials/modal/table-modal.html"></include>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script type="module" src="./js/slider-mini.js"></script>
+
+    <script src="./js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>
