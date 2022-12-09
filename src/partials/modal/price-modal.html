@@ -1,1 +1,28 @@
-<p>Dima TEST</p>
+<div class="backdrop is-hidden" data-modal-price data-modal-price-1 data-modal-price-2 data-modal-price-3>
+    <div class="modal-price">
+        <button type="button" class="modal__close-button" data-modal-price-close>
+            <svg width="24" height="24">
+                <use href="/src/images/icons/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <form class="form-price">
+            <h2 class="form__title">Ціни на номер</h2>
+            <h3 class="form-price__subtitle">Двомісний люкс</h3>
+            <p class="form-price__text">Категорія номеру</p>
+            <div class="form__container">
+                <label class="form__label">
+                    <input required type="number" placeholder="1" class="form-price__input" />
+                    Кількість ночей
+                </label>
+
+                <label class="form__label">
+                    <input type="number" value="1000" disabled class="form-price__input" />
+                    грн
+                </label>
+            </div>
+            <button type="submit" class="form-button">Забронювати номер</button>
+
+            <div></div>
+        </form>
+    </div>
+</div>
