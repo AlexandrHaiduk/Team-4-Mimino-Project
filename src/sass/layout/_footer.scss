@@ -1,0 +1,47 @@
+.link{
+    text-decoration: none;
+    font-style: normal;
+    
+}
+.list{
+    list-style: none;
+}
+footer{
+    background-color: #0E0C07;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+@media screen and (min-width: 1024px){
+    footer{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+@media screen and (min-width: 1280px){
+    footer{
+        padding-top: 80px;
+        padding-bottom: 80px;  
+    } 
+}
+
+.footer__logo{
+    font-family: 'FilmP3', 'sans-serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.06;
+    letter-spacing: 0.3em;
+    color: #F3C653;
+    margin-right: 85px;
+    
+    }
+    @media screen and (min-width: 1024px){
+        .footer__logo{
+        font-size:  64px;
+        line-height: 1.08;
+        margin-right: 0;
+        }
+        
+    }
+    
