@@ -2,7 +2,7 @@
 // display: none; 
 padding-bottom: 32px;
     @media screen and (min-width: $tablet) {
-        display: block;
+        // display: block;
     padding-bottom: 40px;
     }
 
@@ -32,7 +32,7 @@ margin-top: 32px;
 
 .amenities-description {
 width: 384px;
-height: 101px;
+// height: 101px;
 @media screen and (min-width: $tablet) {
     width: 757px;
     height: 45px;
@@ -54,7 +54,6 @@ list-style: none;
 
 .amenities-item {
 margin-bottom: 32px;
-width: 100%;
 }
 
 .amenities-item-title {
@@ -71,11 +70,17 @@ margin-bottom: 16px;
 }
 .amenities-wrap {
     @media screen and (min-width: $tablet) {
-    display: inline-flex;
+    display: flex;
+    gap: 80px;
     }
 }
 
 .amenities-item-description {
+// width: 384px;
+@media screen and (min-width: $tablet) {
+    width: 400px;
+    height: 83px;
+    }
 font-family: $montserrat-font;
 font-weight: 700;
 font-size: 16px;
