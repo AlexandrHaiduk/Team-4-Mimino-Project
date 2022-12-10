@@ -1,2 +1,2 @@
 new Swiper(".swiper-mini",{spaceBetween:25,loop:!0,navigation:{nextEl:".swiper-button-next-mini",prevEl:".swiper-button-prev-mini"},breakpoints:{320:{slidesPerView:1.3,spaceBetween:25},1024:{slidesPerView:2,spaceBetween:40}}});
-//# sourceMappingURL=index.026767f8.js.map
+//# sourceMappingURL=restaurant.3c1789ec.js.map
