@@ -13,6 +13,13 @@ color: #000000;
 text-transform: uppercase;
 margin-top: 32px;
 margin-bottom: 16px;
+    @media screen and (min-width: $tablet) {
+    margin-top: 48px;
+    }
+
+    // @media screen and (min-width: $desktop) {
+    // margin-top: 48px;
+    // }
 }
 
 .amenities-description {
@@ -42,8 +49,6 @@ font-size: 24px;
 line-height: 1.17;
 // line-height: 28px;
 /* identical to box height */
-
-
 color: #000000;
 text-transform: uppercase;
 margin-bottom: 16px;
@@ -61,9 +66,15 @@ color: #7A7A7A;
 margin-bottom: 16px;
 }
 
-// .amenities-wrap {
-// display: flex;
-// }
+.amenities-wrap {
+padding-bottom: 32px;
+//     @media screen and (min-width: $tablet) {
+//     margin-bottom: 40px;
+//     }
+//     @media screen and (min-width: $desktop) {
+//     margin-bottom: 48px;
+//     }
+}
 
 .amenities-btn {
 min-width: 384px;
