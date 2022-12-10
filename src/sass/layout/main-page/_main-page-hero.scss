@@ -47,7 +47,7 @@
       max-width: 1280px;
       height: 720px;
       padding-top: 164px;
-      padding-bottom: 65px;
+      padding-bottom: 64px;
     }
   }
 }
@@ -109,6 +109,9 @@
   @include tablet {
     @include font(128px, 1.08, 700, 0.3em);
     margin-bottom: 16px;
+  }
+  @include desktop {
+    margin-bottom: 32px;
   }
 }
 .hero-about {
