@@ -1,5 +1,4 @@
 .hero {
-  position: relative;
   background-color: rgba(0, 0, 0, 0.65);
   margin-left: auto;
   margin-right: auto;
@@ -8,7 +7,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 414px;
   height: 740px;
   padding-top: 181px;
   padding-bottom: 102px;
@@ -29,7 +27,6 @@
   }
   @include tablet {
     min-width: 415px;
-    max-width: 1024px;
     height: 720px;
     padding-top: 188px;
     padding-bottom: 64px;
@@ -54,9 +51,12 @@
     }
   }
 }
-.hero-cont {
+.hero .container {
+  position: relative;
+}
+.hero-cont-adress {
   position: absolute;
-  top: 64px;
+  top: -117px;
   right: 15px;
   padding: 6px 8px;
   width: 210px;
@@ -65,14 +65,15 @@
   @include tablet {
     width: 285px;
     top: auto;
-    bottom: 64px;
-    left: 15px;
+    bottom: 0px;
+    right: auto;
     padding: 8px;
     padding-left: 10px;
   }
   @include desktop {
-    width: 285px;
     left: 85px;
+    right: auto;
+    width: 285px;
   }
 }
 .hero-adress {
@@ -86,7 +87,7 @@
   }
 }
 
-.hero-adress-icon {
+.hero-adress__icon {
   fill: $accent-color;
   margin-right: 8px;
   @include tablet {
@@ -146,7 +147,7 @@
 .btn--hero {
   display: block;
   margin: 0 auto;
-  transition-property: background-color, border;
+  transition-property: border, background-color;
   transition-duration: $main-transition-duration;
   transition-timing-function: $main-transtition-timing-function;
   @include tablet {
@@ -171,35 +172,35 @@
   background-color: $white;
   border: 2px solid $accent-color;
 }
-.hero-soc-list {
+.hero-soc {
   position: absolute;
-
+  bottom: -87px;
   list-style: none;
   gap: 20px;
   display: flex;
-  bottom: 20px;
   @include tablet {
-    bottom: 15px;
+    bottom: -49px;
   }
   @include desktop {
     bottom: auto;
-    top: 38px;
     right: 85px;
+    top: -126px;
   }
 }
-.hero-soc-icon {
+.hero-soc__icon {
   fill: $accent-color;
+  transition-property: fill, transform;
+  transition-duration: $main-transition-duration;
+  transition-timing-function: $main-transtition-timing-function;
+}
+.hero-soc__link {
   transition-property: fill;
   transition-duration: $main-transition-duration;
   transition-timing-function: $main-transtition-timing-function;
 }
-.hero-soc-link {
-  transition-property: fill;
-  transition-duration: $main-transition-duration;
-  transition-timing-function: $main-transtition-timing-function;
-}
-.hero-soc-icon:hover,
-.hero-soc-icon:focus {
+.hero-soc__icon:hover,
+.hero-soc__icon:focus {
   background-color: transparent;
   fill: $white;
+  transform: scale(1.5);
 }
