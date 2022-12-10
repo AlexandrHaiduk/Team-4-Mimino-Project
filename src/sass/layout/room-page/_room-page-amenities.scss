@@ -1,8 +1,20 @@
-// .amenities {
+.amenities {
+// display: none; 
+padding-bottom: 32px;
+    @media screen and (min-width: $tablet) {
+        display: block;
+    padding-bottom: 40px;
+    }
 
-// }
+    @media screen and (min-width: $desktop) {
+    padding-bottom: 48px;
+    }
+}
 
 .amenities-title {
+// position: absolute;
+width: 337px;
+height: 37px;
 font-family: $times-font;
 font-weight: 400;
 font-size: 32px;
@@ -11,18 +23,20 @@ line-height: 1.16;
 /* identical to box height */
 color: #000000;
 text-transform: uppercase;
-margin-top: 32px;
 margin-bottom: 16px;
+margin-top: 32px;
     @media screen and (min-width: $tablet) {
     margin-top: 48px;
     }
-
-    // @media screen and (min-width: $desktop) {
-    // margin-top: 48px;
-    // }
 }
 
 .amenities-description {
+width: 384px;
+height: 101px;
+@media screen and (min-width: $tablet) {
+    width: 757px;
+    height: 45px;
+    }
 font-family: $montserrat-font;
 font-weight: 700;
 font-size: 16px;
@@ -40,6 +54,7 @@ list-style: none;
 
 .amenities-item {
 margin-bottom: 32px;
+width: 100%;
 }
 
 .amenities-item-title {
@@ -52,6 +67,12 @@ line-height: 1.17;
 color: #000000;
 text-transform: uppercase;
 margin-bottom: 16px;
+
+}
+.amenities-wrap {
+    @media screen and (min-width: $tablet) {
+    display: inline-flex;
+    }
 }
 
 .amenities-item-description {
@@ -64,16 +85,6 @@ letter-spacing: 0.02em;
 
 color: #7A7A7A;
 margin-bottom: 16px;
-}
-
-.amenities-wrap {
-padding-bottom: 32px;
-//     @media screen and (min-width: $tablet) {
-//     margin-bottom: 40px;
-//     }
-//     @media screen and (min-width: $desktop) {
-//     margin-bottom: 48px;
-//     }
 }
 
 .amenities-btn {
