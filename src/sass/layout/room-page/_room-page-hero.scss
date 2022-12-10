@@ -16,11 +16,86 @@
   }
 }
 
+.container--hero-room {
+  height: 740px;
+  @include tablet {
+    height: 720px;
+  }
+}
+
+.hero-room-address {
+  gap: 13px;
+  position: absolute;
+  right: 15px;
+  color: #e5e5e5;
+  fill: $accent-color;
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+  width: 210px;
+  height: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+
+  @media screen and (max-width: 1023px) {
+    top: 65px;
+  }
+
+  @include tablet {
+    width: 285px;
+    height: 56px;
+    left: 47px;
+    bottom: 24px;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.hero-room-address__location {
+  width: 20px;
+  height: 20px;
+  color: $accent-color;
+}
+
+.hero-room-address__icon {
+  fill: currentColor;
+}
+
+.hero-room-address__text {
+  text-decoration: none;
+  color: #e5e5e5;
+  @include font(12px, 15px, 400, 0.01em);
+
+  @include tablet {
+    @include font(16px, 20px, 400, 0.01em);
+  }
+}
+
+.hero-room__content {
+  margin-bottom: 17px;
+  position: absolute;
+  bottom: 118px;
+  left: 15px;
+  width: 325px;
+  @include tablet {
+    margin-bottom: 0;
+    bottom: 104px;
+    left: 47px;
+    width: 507px;
+  }
+  @include desktop {
+    bottom: 48px;
+    left: 135px;
+  }
+}
+
 .hero-room {
   position: relative;
   background-image: url(../images/hero/bg-hot.jpg);
   max-width: 1280px;
-  height: 740px;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -59,9 +134,49 @@
 .hero-room__text {
   @include font(12px, 15px, 700, 0.02em);
   color: #ffffff;
-  margin-bottom: 30px;
   @include tablet {
     @include font(16px, 20px, 700, 0.05em);
-    margin-bottom: 0;
   }
+}
+
+.hero-room__btn {
+  position: absolute;
+  bottom: 40px;
+  right: 73px;
+  @include tablet {
+    bottom: 64px;
+    right: 47px;
+  }
+
+  @include desktop {
+    bottom: 66px;
+    right: 85px;
+  }
+}
+
+.hero-room-socials {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  position: absolute;
+  left: 15px;
+  bottom: 14px;
+  gap: 8px;
+  @include tablet {
+    gap: 23px;
+    bottom: 38px;
+    left: 372px;
+    flex-direction: row;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+
+.hero-room-socials__link {
+  color: rgba(243, 198, 83, 0.7);
+}
+
+.hero-room-socials__icon {
+  fill: currentColor;
 }
