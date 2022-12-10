@@ -73,6 +73,10 @@ margin-bottom: 16px;
     display: flex;
     gap: 80px;
     }
+    @media screen and (min-width: $desktop) {
+    display: flex;
+    gap: 159px;
+    }
 }
 
 .amenities-item-description {
@@ -90,6 +94,14 @@ letter-spacing: 0.02em;
 
 color: #7A7A7A;
 margin-bottom: 16px;
+}
+
+.amenities-wrapper {
+    @media screen and (min-width: $tablet) {
+    display: flex;
+    flex: wrap;
+    justify-content: flex-end;
+    }
 }
 
 .amenities-btn {
