@@ -51,7 +51,7 @@
     }
   }
 }
-.hero .container {
+.hero-rest .container {
   position: relative;
 }
 .hero-cont-adress {
@@ -97,7 +97,7 @@
   }
 }
 
-.hero-tittle {
+.hero-rest-tittle {
   text-align: center;
   margin-right: -35px;
   font-family: 'FilmP3', 'sans-serif';
@@ -105,7 +105,7 @@
   text-transform: uppercase;
   @include font(96px, 1.07, 700, 0.3em);
   color: $white;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   @include tablet {
     @include font(128px, 1.08, 700, 0.3em);
     margin-bottom: 16px;
@@ -114,7 +114,7 @@
     margin-bottom: 32px;
   }
 }
-.hero-about {
+.hero-rest-about {
   text-align: center;
   font-family: $montserrat-font;
   @include font(16px, 1.25, 600, 0.02em);
@@ -128,7 +128,7 @@
     margin-bottom: 64px;
   }
 }
-.hero-taste {
+.hero-rest-taste {
   text-align: center;
   text-transform: uppercase;
   font-family: $times-font;

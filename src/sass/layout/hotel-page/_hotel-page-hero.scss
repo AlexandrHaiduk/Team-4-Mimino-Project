@@ -51,7 +51,7 @@
     }
   }
 }
-.hero .container {
+.hero-hotel .container {
   position: relative;
 }
 .hero-cont-adress {
@@ -97,7 +97,7 @@
   }
 }
 
-.hero-tittle {
+.hero-hotel-tittle {
   text-align: center;
   margin-right: -35px;
   font-family: 'FilmP3', 'sans-serif';
@@ -114,7 +114,7 @@
     margin-bottom: 32px;
   }
 }
-.hero-about-hotel {
+.hero-hotel-about {
   text-align: center;
   font-family: $montserrat-font;
   @include font(16px, 1.25, 600, 0.02em);
@@ -128,18 +128,7 @@
     margin-bottom: 249px;
   }
 }
-.hero-taste {
-  text-align: center;
-  text-transform: uppercase;
-  font-family: $times-font;
-  @include font(32px, 1.16, 700, 0.05em);
-  color: $white;
-  margin-bottom: 113px;
-  @include tablet {
-    @include font(36px, 1.14, 700, 0.05em);
-    margin-bottom: 145px;
-  }
-}
+
 .hero-btn-container {
   @include tablet {
     display: flex;
