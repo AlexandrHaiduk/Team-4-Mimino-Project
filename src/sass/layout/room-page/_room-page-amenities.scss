@@ -98,7 +98,7 @@ margin-bottom: 16px;
 
 .amenities-wrapper {
     @media screen and (min-width: $tablet) {
-    display: flex;
+    // display: inline-block;
     flex-direction: column;
     text-align: right;
     }
