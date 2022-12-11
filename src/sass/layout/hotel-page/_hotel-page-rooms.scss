@@ -1,0 +1,156 @@
+.room__lux,
+.room__double {
+  background-color: $background-light-lemon;
+  padding: 32px 15px;
+
+  @include tablet {
+    padding: 62px 47px;
+  }
+  @include desktop {
+    padding: 72px 85px;
+  }
+}
+.room__triple {
+  background-color: $background-dark-lemon;
+  padding: 32px 15px;
+  @include tablet {
+    padding: 62px 47px;
+  }
+  @include desktop {
+    padding: 72px 85px;
+  }
+}
+.room__description {
+  margin-bottom: 32px;
+  @include tablet {
+    margin-right: 26px;
+  }
+  @include desktop {
+    margin-right: 48px;
+  }
+}
+.room__triple .room__description {
+  margin-left: 45px;
+  text-align: end;
+}
+.rooms__list,
+.room__logo,
+.room__detal {
+  list-style: none;
+  text-decoration: none;
+}
+.room__title {
+  font-family: $times-font;
+  @include font(24px, 1.17, 700, 0.05em);
+  color: $black;
+  margin-top: 32px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  @include tablet {
+    @include font(30px, 1.13, 700, 0.05em);
+    margin-top: 62px;
+    margin-bottom: 16px;
+  }
+  @include desktop {
+    @include font(36px, 1.13, 700, 0.05em);
+    margin-top: 72px;
+    margin-bottom: 24px;
+  }
+}
+.room__triple .room__title {
+  text-align: end;
+}
+.room__pre-logo {
+  font-family: $times-font;
+  @include font(20px, 1.15, 400, null);
+  color: #b4b4b4;
+  margin-bottom: 8px;
+  @include tablet {
+    @include font(32px, 1.16, 400, null);
+    margin-bottom: 4px;
+  }
+}
+.room__triple .room__pre-logo {
+  text-align: end;
+}
+.room__text {
+  font-family: $montserrat-font;
+  @include font(12px, 1.25, 600, 0.02em);
+  color: $main-text-color;
+  margin-bottom: 32px;
+  max-width: 242px;
+  @include tablet {
+    max-width: 439px;
+    @include font(16px, 1.25, 600, 0.02em);
+  }
+  @include desktop {
+    max-width: 400px;
+  }
+}
+.room__triple .room__text {
+  margin: 0 auto;
+  text-align: start;
+}
+.room__detal {
+  margin-bottom: 16px;
+  max-width: 236px;
+}
+.room__logo {
+  font-family: $film-font;
+  @include font(40px, 1.07, 700, 0.3em);
+  color: $contact-text-color;
+  text-transform: uppercase;
+  @include tablet {
+    @include font(64px, 1.07, 700, 0.3em);
+  }
+}
+.room__triple .room__logo {
+  text-align: end;
+}
+.low__letter {
+  text-transform: lowercase;
+}
+.room__bedroom {
+  box-shadow: $picture-shadow;
+  border-radius: 2px;
+  width: 246px;
+  background-color: #dadada;
+  margin-left: auto;
+  @include tablet {
+    width: 400px;
+    margin-top: -94px;
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  }
+  @include desktop {
+    width: 460px;
+    margin-top: -104px;
+  }
+}
+.room__triple .room__bedroom {
+  margin-left: 0px;
+}
+.room {
+  @include tablet {
+    display: flex;
+  }
+}
+.room__triple .room {
+  flex-direction: row-reverse;
+}
+.room__button {
+  @include tablet {
+    margin-bottom: 82px;
+  }
+
+  @include desktop {
+    margin-bottom: 110px;
+  }
+}
+.room__slider {
+  height: 194px;
+}
+.btn {
+  @include tablet {
+    margin-right: 0;
+  }
+}
