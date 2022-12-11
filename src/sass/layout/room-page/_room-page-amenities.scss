@@ -98,14 +98,14 @@ margin-bottom: 16px;
 
 .amenities-wrapper {
     @media screen and (min-width: $tablet) {
-    // display: inline-block;
+    display: flex;
     flex-direction: column;
     text-align: right;
     }
 }
 
 .amenities-btn {
-min-width: 384px;
+width: 384px;
 height: 64px;
 background-color: #000000;
 border: 1px solid #F3C653;
