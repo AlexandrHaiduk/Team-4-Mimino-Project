@@ -99,7 +99,7 @@ display: flex;
 }
 
 .footer__list{
-
+margin-bottom: 32px;
 display: flex;
 flex-direction: column;
 gap: 16px;
@@ -112,9 +112,18 @@ gap: 16px;
 .footer__item{
     gap: 16px;
 } 
-.footer__item:not(:last-child) {
+.footer__logo::after{
+    content: '';
+    width: 320px;
+    
+    border: 1px solid rgba(122, 122, 122, 0.4);
+filter: blur(0.5px);
+
+
+}
+/*.footer__item:not(:last-child) {
     margin-bottom: 16px;
-  }  
+  }  */
 .nav__link{
     font-family: 'Montserrat', 'sans-serif';
     font-style: normal;
@@ -212,7 +221,9 @@ color:rgba(243, 198, 83, 0.7);
    fill: currentColor;
     
 }
-
+.footer-soc__text{
+display: none;  
+}
 @media screen and (min-width: 414px ){
     .footer-soc__text{
     display: none;
