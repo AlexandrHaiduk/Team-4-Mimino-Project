@@ -1,0 +1,57 @@
+.modal-price {
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    padding: 15px 15px 60px 15px;
+    border-radius: 2px;
+    width: 100%;
+    max-width: 414px;
+    background-color: $white;
+    transform: translateX(-50%);
+    z-index: 3;
+
+    @include tablet {
+        width: 712px;
+        max-width: 712px;
+        padding: 60px;
+    }
+}
+
+.form-price__subtitle {
+    margin-bottom: 28px;
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+    color: #808080;
+}
+
+.form-price__text {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: $brown-text-color;
+}
+
+.form-price__input {
+    width: 100%;
+    max-width: 384px;
+    height: 54px;
+    margin-bottom: 8px;
+    padding: 12px;
+    border: 1px solid $brown-text-color;
+    border-radius: 2px;
+    outline: none;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.05em;
+    color: #808080;
+    cursor: pointer;
+}
+
