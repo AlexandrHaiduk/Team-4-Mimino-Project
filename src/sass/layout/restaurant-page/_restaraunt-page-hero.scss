@@ -1,0 +1,209 @@
+.hero-rest {
+  background-color: rgba(0, 0, 0, 0.65);
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(../images/hero/bg-rest.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 740px;
+  padding-top: 181px;
+  padding-bottom: 102px;
+  @include retina2x {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/hero/bg-rest@2x.jpg);
+  }
+  @media screen and (min-width: 415px) and (max-width: 1024px) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/hero/bg-rest-tablet.jpg);
+    @include retina2x {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero/bg-rest-tablet@2x.jpg);
+    }
+  }
+  @include tablet {
+    min-width: 415px;
+    height: 720px;
+    padding-top: 188px;
+    padding-bottom: 64px;
+  }
+  @media screen and (min-width: 1025px) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/hero/bg-rest-desktop.jpg);
+
+    @include retina2x {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero/bg-rest-desktop@2x.jpg);
+    }
+    @include desktop {
+      min-width: 1025px;
+      max-width: 1280px;
+      height: 720px;
+      padding-top: 164px;
+      padding-bottom: 64px;
+    }
+  }
+}
+.hero-rest .container {
+  position: relative;
+}
+.hero-cont-adress {
+  position: absolute;
+  top: -117px;
+  right: 15px;
+  padding: 6px 8px;
+  width: 210px;
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+  @include tablet {
+    width: 285px;
+    top: auto;
+    bottom: 0px;
+    right: auto;
+    padding: 8px;
+    padding-left: 10px;
+  }
+  @include desktop {
+    left: 85px;
+    right: auto;
+    width: 285px;
+  }
+}
+.hero-adress {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #e5e5e5;
+  @include font(12px, 1.25, 400, 0.01em);
+  @include tablet {
+    @include font(16px, 1.25, 400, 0.01em);
+  }
+}
+
+.hero-adress__icon {
+  fill: $accent-color;
+  margin-right: 8px;
+  @include tablet {
+    width: 12px;
+    height: 19px;
+    margin-right: 10px;
+  }
+}
+
+.hero-rest-tittle {
+  text-align: center;
+  margin-right: -35px;
+  font-family: 'FilmP3', 'sans-serif';
+  font-style: normal;
+  text-transform: uppercase;
+  @include font(96px, 1.07, 700, 0.3em);
+  color: $white;
+  margin-bottom: 20px;
+  @include tablet {
+    @include font(128px, 1.08, 700, 0.3em);
+    margin-bottom: 16px;
+  }
+  @include desktop {
+    margin-bottom: 32px;
+  }
+}
+.hero-rest-about {
+  text-align: center;
+  font-family: $montserrat-font;
+  @include font(16px, 1.25, 600, 0.02em);
+  color: $white;
+  margin-bottom: 40px;
+  @include tablet {
+    @include font(20px, 1.2, 600, 0.02em);
+    margin-bottom: 56px;
+  }
+  @include desktop {
+    margin-bottom: 64px;
+  }
+}
+.hero-rest-taste {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $times-font;
+  @include font(32px, 1.16, 700, 0.05em);
+  color: $white;
+  margin-bottom: 113px;
+  @include tablet {
+    @include font(36px, 1.14, 700, 0.05em);
+    margin-bottom: 145px;
+  }
+}
+.hero-btn-container {
+  @include tablet {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.btn--hero {
+  display: block;
+  margin: 0 auto;
+  transition-property: border, background-color;
+  transition-duration: $main-transition-duration;
+  transition-timing-function: $main-transtition-timing-function;
+  @include tablet {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.btn--hero:not(:last-child) {
+  margin-bottom: 24px;
+  @include tablet {
+    margin-bottom: 0;
+    margin-right: 40px;
+  }
+  @include desktop {
+    margin-right: 60px;
+  }
+}
+
+.btn--hero:hover,
+.btn--hero:focus {
+  background-color: $white;
+  border: 2px solid $accent-color;
+}
+.hero-soc {
+  position: absolute;
+  bottom: -87px;
+  list-style: none;
+  gap: 20px;
+  display: flex;
+  @include tablet {
+    bottom: -49px;
+  }
+  @include desktop {
+    bottom: auto;
+    right: 85px;
+    top: -126px;
+  }
+}
+.hero-soc__icon {
+  fill: $accent-color;
+  transition-property: fill, transform;
+  transition-duration: $main-transition-duration;
+  transition-timing-function: $main-transtition-timing-function;
+}
+.hero-soc__link {
+  transition-property: fill;
+  transition-duration: $main-transition-duration;
+  transition-timing-function: $main-transtition-timing-function;
+}
+.hero-soc__icon:hover,
+.hero-soc__icon:focus {
+  background-color: transparent;
+  fill: $white;
+  transform: scale(1.5);
+}
