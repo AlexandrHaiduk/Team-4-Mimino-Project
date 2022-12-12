@@ -1,0 +1,213 @@
+.main-page-about-restaurant {
+    @include tablet {
+        min-height: 1238px;
+    }
+    @include desktop {
+        min-height: 1275px;
+    }
+}
+
+.about__restaurant{
+    @include tablet {
+        position: relative;
+        min-height: 1238px;
+    }
+
+    @include desktop {
+        position: relative;
+        min-height: 1275px;
+    }
+
+    background-color: $background-light-lemon;
+    background-image: repeating-linear-gradient(
+        to right ,
+        $background-light-lemon -5px,
+        $background-light-lemon 140px,
+        rgba(186, 186, 186, 0.4) 140px,
+        rgba(186, 186, 186, 0.4) 141px,
+        $background-light-lemon 141px,
+        $background-light-lemon 275px,
+        rgba(186, 186, 186, 0.4) 275px,
+        rgba(186, 186, 186, 0.4) 276px,
+        $background-light-lemon 276px,
+        $background-light-lemon 415px
+        );
+       
+    @include tablet {
+        background-image: repeating-linear-gradient(
+            to right ,
+            $background-light-lemon -5px,
+            $background-light-lemon 275px,
+            rgba(186, 186, 186, 0.4) 275px,
+            rgba(186, 186, 186, 0.4) 276px,
+            $background-light-lemon 276px,
+            $background-light-lemon 746px,
+            rgba(186, 186, 186, 0.4) 746px,
+            rgba(186, 186, 186, 0.4) 747px,
+            $background-light-lemon 747px,
+            $background-light-lemon 1024px
+            );
+    }
+
+    @include desktop {
+        background-image: repeating-linear-gradient(
+            to right ,
+            $background-light-lemon -5px,
+            $background-light-lemon 338px,
+            rgba(186, 186, 186, 0.4) 338px,
+            rgba(186, 186, 186, 0.4) 339px,
+            $background-light-lemon 339px,
+            $background-light-lemon 640px,
+            rgba(186, 186, 186, 0.4) 640px,
+            rgba(186, 186, 186, 0.4) 641px,
+            $background-light-lemon 641px,
+            $background-light-lemon 942px,
+            rgba(186, 186, 186, 0.4) 942px,
+            rgba(186, 186, 186, 0.4) 943px,
+            $background-light-lemon 943px,
+            $background-light-lemon 1800px
+            );
+    }
+
+    &__text {
+        margin-top: 12px;
+        margin-bottom: 12px;
+
+        font-family: 'TimesNewRoman';
+        @include font (20, 1.15, 400, null);
+        color: #b4b4b4;
+
+        @include tablet {
+            margin-top: 120px;         
+            @include font (32, 1.15, 400, null)
+        };
+    }
+    &__mimino__text {
+        margin-bottom: 12px;
+        
+        font-family: 'FilmP3';
+        @include font (40, 1.08, 700, 12);
+        color: $contact-text-color;
+
+        @include tablet {
+            display: block;
+            margin-bottom: 24px;
+            width: 202px;
+            @include font (64, 1.08, 700, 19.2)
+        }
+
+    }
+    &__description{  
+        margin-bottom: 28px;
+        
+        font-family: 'Montserrat';
+        display: block;
+        width: 258px;
+        @include font (12, 1.22, 600, 0.24);
+        color: $main-text-color;
+
+        @include tablet {
+            width: 439px;
+            @include font (16, 1.22, 700, 0.32)
+        }
+
+        @include desktop {
+            width: 512px;
+        }
+    }  
+    &__descr {
+        display: block;
+        width: 170px;
+        @include font (12, 1.22, 600, 0.24);
+        color: $brown-text-color;
+
+        @include tablet {
+            position: absolute;
+            top: 672px;
+            left: 445px;
+            width: 312px;
+
+            @include font (16, 1.22, 600, 0.32)
+        }
+
+        @include desktop {
+            position: absolute;
+            top: 662px;
+            left: 577px;
+        }
+    }
+    &__flex__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }  
+      
+    
+}
+
+.restaurant__image__thumb {
+    display: flex;
+    justify-content: end;
+
+    margin-bottom: 32px;
+
+    @include tablet {
+        position: absolute;
+        top: -32px;
+        left: 512px;
+    }
+
+    @include desktop {
+        position: absolute;
+        top: -33px;
+        left: 640px;
+    }
+}
+
+.hall__image__thumb {
+    margin-bottom: 32px;
+
+    @include tablet {
+        position: absolute;
+        top: 476;
+    }
+
+    @include desktop {
+        position: absolute;
+        top: 476;
+    }
+}
+
+.about__restaurant__slider {
+    height: 377px;
+
+    @include tablet {
+        position: absolute;
+        left: 512px;
+        top: 838px;
+
+        height: 400px;
+        width: 512px;
+    }
+
+    @include desktop {
+        position: absolute;
+        left: 512px;
+        top: 875px;
+
+        height: 400px;
+        width: 640px;
+    }
+}
+
+.visually__hidden {
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+    }
