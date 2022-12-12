@@ -147,6 +147,13 @@
   }
 }
 
+.hero-btn-container {
+  @include tablet {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
 .btn--hero {
   display: block;
   margin: 0 auto;
@@ -170,6 +177,12 @@
   }
 }
 
+.btn--hero:last-child {
+  width: 232px;
+  text-decoration: none;
+  text-align: center;
+}
+
 .btn--hero:hover,
 .btn--hero:focus {
   background-color: $white;
@@ -185,9 +198,7 @@
     bottom: -49px;
   }
   @include desktop {
-    bottom: auto;
-    right: 85px;
-    top: -126px;
+    display: none;
   }
 }
 .hero-soc__icon {
