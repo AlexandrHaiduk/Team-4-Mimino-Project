@@ -1,7 +1,12 @@
 .amenities {
 background-color:$background-light-lemon;
+padding-top: 32px;
 padding-bottom: 32px;
     @media screen and (min-width: $tablet) {
+    padding-top: 48px;
+    padding-bottom: 40px;
+    }
+    @media screen and (min-width: $desktop) {
     padding-bottom: 48px;
     }
 }
@@ -16,15 +21,11 @@ line-height: 1.16;
 color: #000000;
 text-transform: uppercase;
 margin-bottom: 16px;
-// margin-top: 32px;
-//     @media screen and (min-width: $tablet) {
-//     margin-top: 48px;
-//     }
 }
 
 .amenities-description {
 width: 384px;
-@media screen and (min-width: $tablet) {
+    @media screen and (min-width: $tablet) {
     width: 757px;
     height: 45px;
     }
@@ -60,6 +61,7 @@ margin-bottom: 16px;
     @media screen and (min-width: $tablet) {
     display: flex;
     gap: 80px;
+    // justify-content: space-between;
     }
     @media screen and (min-width: $desktop) {
     display: flex;
@@ -68,9 +70,9 @@ margin-bottom: 16px;
 }
 
 .amenities-item-description {
-@media screen and (min-width: $tablet) {
+    @media screen and (min-width: $tablet) {
     width: 400px;
-    height: 83px;
+    // height: 83px;
     }
 font-family: $montserrat-font;
 font-weight: 700;
@@ -79,7 +81,6 @@ line-height: 1.25;
 letter-spacing: 0.02em;
 
 color: #7A7A7A;
-margin-bottom: 16px;
 }
 
 .amenities-wrapper {
@@ -87,13 +88,16 @@ margin-bottom: 16px;
     display: flex;
     flex-direction: column;
     text-align: right;
-    justify-content: flex-end;
+    justify-content: center;
     }
 }
 
 .amenities-btn {
 width: 384px;
 height: 64px;
+@media screen and (min-width: $tablet) {
+    width: 434px;
+    } 
 background-color: #000000;
 border: 1px solid #F3C653;
 border-radius: 25px;
@@ -102,10 +106,14 @@ font-style: normal;
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
+    @media screen and (min-width: $tablet) {
+    font-size: 24px;
+    line-height: 1.21;
+    } 
 text-transform: uppercase;
 color: #FFFFFF;
 margin-bottom: 20px;
-@media screen and (min-width: $tablet) {
+    @media screen and (min-width: $tablet) {
     margin-bottom: 32px;
     }
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -120,7 +128,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 
 .amenities-link {
 width: 351px;
-@media screen and (min-width: $tablet) {
+    @media screen and (min-width: $tablet) {
     width: 433px;
     } 
 display: flex;
@@ -128,17 +136,21 @@ font-family: 'Montserrat';
 font-weight: 500;
 font-size: 16px;
 line-height: 1.25;
+    @media screen and (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 1.2;
+    } 
 letter-spacing: 0.02em;
 color: #C79002;
 text-decoration: none;
-justify-content: flex-end;
+justify-content: center;
 margin-left: auto;
 }
 
 .amenities-link-icon {
 fill: currentColor;
 margin-left: 12px;
-@media screen and (min-width: $tablet) {
+    @media screen and (min-width: $tablet) {
     margin-left: 16px;
     }
 }
