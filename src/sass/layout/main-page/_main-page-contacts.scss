@@ -1,0 +1,17 @@
+.title {
+$film-font: 'FilmP3', 'sans-serif';
+@mixin font($size, $height, $weight, $spacing) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+  letter-spacing: $spacing;
+}
+
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 43px;
+letter-spacing: 0.3em;
+
+$contact-text-color: #494848;
+}
