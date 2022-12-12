@@ -29,7 +29,7 @@
     min-width: 415px;
     height: 720px;
     padding-top: 188px;
-    padding-bottom: 64px;
+    padding-bottom: 65px;
   }
   @media screen and (min-width: 1025px) {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
@@ -105,13 +105,9 @@
   text-transform: uppercase;
   @include font(96px, 1.07, 700, 0.3em);
   color: $white;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
   @include tablet {
     @include font(128px, 1.08, 700, 0.3em);
-    margin-bottom: 16px;
-  }
-  @include desktop {
-    margin-bottom: 32px;
   }
 }
 .hero-hotel-about {
