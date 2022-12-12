@@ -132,13 +132,7 @@ letter-spacing: 0.02em;
 color: #C79002;
 text-decoration: none;
 justify-content: flex-end;
-margin-left: 31px;
-@media screen and (min-width: $tablet) {
-    margin-left: 544px;
-    } 
-@media screen and (min-width: $desktop) {
-    margin-left: 648px;
-    } 
+margin-left: auto;
 }
 
 .amenities-link-icon {
