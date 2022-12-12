@@ -7,7 +7,7 @@
     }
 }
 
-.about__hotel {
+.about-hotel {
     @include tablet {
         min-height: 1238px;
     }
@@ -105,7 +105,7 @@
         };
 
     }
-    &__mimino__text {
+    &__mimino {
         margin-bottom: 12px;  
         text-align: end;  
 
@@ -131,7 +131,7 @@
         color: $main-text-color;
 
         @include tablet {
-            width: 370px;
+            width: 419px;
             @include font (16, 1.22, 600, 0.32)
         }
 
@@ -157,12 +157,12 @@
             margin-top: -200px;
         }
     }
-    &__flex__wrapper {
+    &__cover {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }  
-    &__flex__wrap {
+    &__wrap {
         @include tablet {
             display: flex;
             flex-direction: row-reverse;
@@ -177,7 +177,7 @@
     }
 }
 
-.bedroom__image__thumb {
+.bedroom-image__thumb {
     display: flex;
     justify-content: start;
 
@@ -187,7 +187,7 @@
 
     @include tablet {
         margin-top: -32px;
-        margin-left: 100px;
+        margin-left: 75px;
     }
 
     @include desktop {
@@ -196,7 +196,7 @@
     }
 }
 
-.hotel__image__thumb {
+.hotel-image__thumb {
     box-shadow: $picture-shadow;
     
 
@@ -209,7 +209,7 @@
     }
 }
 
-.about__hotel__slider {
+.about-hotel__slider {
     height: 377px;
 
     @include tablet {
@@ -227,7 +227,7 @@
     }
 }
 
-.visually__hidden {
+.visually-hidden {
     white-space: nowrap;
     width: 1px;
     height: 1px;
