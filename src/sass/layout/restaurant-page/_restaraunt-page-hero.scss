@@ -170,6 +170,12 @@
   }
 }
 
+.btn--hero:last-child {
+  min-width: 232px;
+  text-decoration: none;
+  text-align: center;
+}
+
 .btn--hero:hover,
 .btn--hero:focus {
   background-color: $white;
