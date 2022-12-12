@@ -1,10 +1,6 @@
 .header-container {
-<<<<<<< Updated upstream
   position: absolute;
   z-index: 1;
-=======
-  position: relative;
->>>>>>> Stashed changes
   display: flex;
   align-items: center;
   margin: 0 auto;
@@ -121,29 +117,6 @@
   margin-right: 16px;
 }
 
-<<<<<<< Updated upstream
-=======
-.map-location {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.25;
-  letter-spacing: 0.01em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-
-  padding: 8px;
-  margin-right: auto;
-  color: #e5e5e5;
-
-  border: 1px solid rgba(243, 198, 83, 0.7);
-  border-radius: 2px;
-}
-
->>>>>>> Stashed changes
 .icon-contact-mobile {
   fill: #f3c653;
 
@@ -151,14 +124,3 @@
     margin-right: 8px;
   }
 }
-<<<<<<< Updated upstream
-=======
-
-.icon-location {
-  fill: #f3c653;
-}
-
-.icon-soc {
-  fill: rgba(243, 198, 83, 0.7);
-}
->>>>>>> Stashed changes
