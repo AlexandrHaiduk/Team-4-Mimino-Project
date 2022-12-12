@@ -150,7 +150,23 @@
   height: 194px;
 }
 .btn {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @include tablet {
     margin-right: 0;
   }
+}
+.room__triple .room__detal,
+.room__triple .room__price {
+  @include tablet {
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+.btn:hover,
+.btn:focus {
+  background-color: $white;
+  border: 2px solid $accent-color;
+  border-radius: 25px;
 }
