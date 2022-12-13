@@ -1,24 +1,4 @@
-.main-page-about-restaurant {
-    min-height: 1191px;
-    @include tablet {
-        min-height: 1238px;
-    }
-    @include desktop {
-        min-height: 1275px;
-    }
-}
-
-.about-restaurant{
-    min-height: 1191px;
-    @include tablet {
-        min-height: 1238px;
-    }
-
-    @include desktop {
-        min-height: 1275px;
-    }
-
-    background-color: $background-light-lemon;
+.container {
     background-image: repeating-linear-gradient(
         to right ,
         $background-light-lemon -5px,
@@ -68,9 +48,14 @@
             $background-light-lemon 1800px
             );
     }
+}
+.about-restaurant{
+
+    background-color: $background-light-lemon;
+    
 
     &__text {
-        margin-top: 12px;
+        padding-top: 12px;
         margin-bottom: 12px;
 
         font-family: 'TimesNewRoman';
