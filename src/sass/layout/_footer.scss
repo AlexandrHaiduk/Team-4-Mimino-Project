@@ -31,9 +31,10 @@
 }
 
 footer{
-    background-color: #0E0C07;
+    background-color: $footer-bc;
     padding-top: 40px;
     padding-bottom: 40px;
+    
 }
 
 @media screen and (min-width: 1024px){
@@ -52,13 +53,22 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(90deg,#0e0c07 273px,rgba(122,122,122,.4) 274px,#0e0c07 275px);
 }
 @media screen and (min-width: 1024px) {
     .footer__container{
     justify-content: center;
+    background-image: linear-gradient(90deg,#0e0c07 511px,rgba(122,122,122,.4) 512px,#0e0c07 513px,#0e0c07 745px,rgba(122,122,122,.4) 746px,#0e0c07 747px);
     }
 }
- 
+@media screen and (min-width: 1280px) {
+.footer__container {
+    
+    background-image: linear-gradient(90deg,#0e0c07 639px,rgba(122,122,122,.4) 640px,#0e0c07 641px,#0e0c07 941px,rgba(122,122,122,.4) 942px,#0e0c07 943px);
+}
+}
+
+
 .footer__container-logo{
 display: flex;
 text-align: center;
@@ -73,13 +83,13 @@ align-items: center;
     font-size: 40px;
     line-height: 1.06;
     letter-spacing: 0.3em;
-    color: #F3C653;
+    color: $accent-color;
     margin-right: 85px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   }
+    transition: color $main-transition-duration $main-transtition-timing-function;
 .footer__logo:hover,
 .footer__logo:focus{
-    color: white;
+    color: $white;
+}
 }
 @media screen and (min-width: 1024px){
 .footer__logo{
@@ -123,15 +133,15 @@ gap: 16px;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    color: #F3C653;
+    transition: background-color $main-transition-duration $main-transtition-timing-function, 
+    color $main-transition-duration $main-transtition-timing-function;
+    color: $accent-color;
     
     
 }
 .nav__link:hover,
 .nav__link:focus{
-    color: white;
+    color: $white;
     
 }
 @media screen and (min-width: 1024px){
@@ -163,14 +173,14 @@ display:flex;
 display: flex;
 align-items: center;
 justify-content: center;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-color: #F3C653;    
+transition: background-color $main-transition-duration $main-transtition-timing-function, 
+color $main-transition-duration $main-transtition-timing-function;
+color: $accent-color;    
 }
 .footer-soc__link:hover,
 .footer-soc__link:focus{
    background-color: transparent;
-    color: white;
+    color: $white;
     
 }
 @media screen and (min-width: 1024px) {
@@ -182,7 +192,7 @@ color: #F3C653;
 }
 .footer-soc__link:hover .footer-soc__text,
 .footer-soc__link:focus .footer-soc__text {
-   color: white;
+   color: $white;
    fill: currentColor;
 }
 .footer-soc__link:hover,
@@ -192,7 +202,7 @@ color: #F3C653;
         }
      
         @media screen and (min-width: 1024px) {
-        border: 0.5px solid white;
+        border: 0.5px solid $white;
         }
      
 }
@@ -200,7 +210,7 @@ color: #F3C653;
     .footer-soc__link{
      width: 143px;   
      height: 40px;
-    border: 0.5px solid #F3C653;
+    border: 0.5px solid $accent-color;
     border-radius: 2px;
     text-align: center;
     display: flex;
@@ -214,9 +224,8 @@ color: #F3C653;
     
 }
 .footer-soc__text{
-    color: #F3C653;
-
-display: none;  
+    color: $accent-color;
+    display: none;  
 }
 @media screen and (min-width: 414px ){
     .footer-soc__text{
@@ -233,7 +242,7 @@ font-size: 16px;
 line-height: 1.25;
 align-items: center;
 letter-spacing: 0.02em;
-color: #F3C653;
+color: $accent-color;
 margin-right: 18.5px;
         }
     }
