@@ -71,7 +71,7 @@
 
     &__text {
         margin-top: 12px;
-        margin-bottom: 12px;
+      /*  margin-bottom: 12px;*/
 
         font-family: 'TimesNewRoman';
         @include font (20, 1.15, 400, null);
