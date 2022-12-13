@@ -171,6 +171,7 @@
     bottom: -49px;
   }
   @include desktop {
+    display: none;
     bottom: auto;
     right: 85px;
     top: -126px;
