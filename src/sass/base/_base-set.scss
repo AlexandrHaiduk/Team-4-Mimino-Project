@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: $montserrat-font;
 }
@@ -58,26 +61,39 @@ table {
 
     padding: 0 85px;
   }
+  &--relative {
+    position: relative;
+  }
 }
 
 .btn {
-  display: block;
-  margin: 0 auto;
-  padding: 14px 0;
-  min-width: 236px;
-
-  background-color: $black;
-  border: 2px solid $background-light-lemon;
-  border-radius: 25px;
-
-  font-family: $montserrat-font;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: $accent-color;
-  text-align: center;
+  min-width: 236px;
+  padding: 12px 22px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  cursor: pointer;
+
   &--hero {
     background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  transition: background-color 250ms $main-transtition-timing-function,
+    border 250ms $main-transtition-timing-function,
+    color 250ms $main-transtition-timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+    border: 2px solid $accent-color;
+  }
+
+  &:active {
+    border-color: $white;
   }
 }
