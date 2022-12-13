@@ -22,12 +22,55 @@ table {
 
 .menu {
   background-color: $background-light-lemon;
+  background-image: repeating-linear-gradient(
+    to right ,
+    $background-light-lemon -5px,
+    $background-light-lemon 140px,
+    rgba(186, 186, 186, 0.4) 140px,
+    rgba(186, 186, 186, 0.4) 141px,
+    $background-light-lemon 141px,
+    $background-light-lemon 275px,
+    rgba(186, 186, 186, 0.4) 275px,
+    rgba(186, 186, 186, 0.4) 276px,
+    $background-light-lemon 276px,
+    $background-light-lemon 415px
+    );
   padding: 32px 0;
 
   @include tablet {
+  background-image: repeating-linear-gradient(
+    to right ,
+    $background-light-lemon -5px,
+    $background-light-lemon 275px,
+    rgba(186, 186, 186, 0.4) 275px,
+    rgba(186, 186, 186, 0.4) 276px,
+    $background-light-lemon 276px,
+    $background-light-lemon 746px,
+    rgba(186, 186, 186, 0.4) 746px,
+    rgba(186, 186, 186, 0.4) 747px,
+    $background-light-lemon 747px,
+    $background-light-lemon 1024px
+    );
     padding: 58px 0 40px 0;
   }
   @include desktop {
+  background-image: repeating-linear-gradient(
+    to right ,
+    $background-light-lemon -5px,
+    $background-light-lemon 338px,
+    rgba(186, 186, 186, 0.4) 338px,
+    rgba(186, 186, 186, 0.4) 339px,
+    $background-light-lemon 339px,
+    $background-light-lemon 640px,
+    rgba(186, 186, 186, 0.4) 640px,
+    rgba(186, 186, 186, 0.4) 641px,
+    $background-light-lemon 641px,
+    $background-light-lemon 942px
+    rgba(186, 186, 186, 0.4) 942px,
+    rgba(186, 186, 186, 0.4) 943px,
+    $background-light-lemon 943px,
+    $background-light-lemon 1800px
+    );
     padding: 58px 0 60px 0;
   }
 }
