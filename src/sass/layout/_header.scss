@@ -1,5 +1,9 @@
-.header-container {
+.header {
   position: absolute;
+  width: 100%;
+}
+
+.header-container {
   z-index: 1;
   display: flex;
   align-items: center;
@@ -43,6 +47,11 @@
   }
 }
 
+.header-nav__item:nth-child(4) {
+  @media screen and (min-width: 1280px) {
+    margin-right: 58px;
+  }
+}
 .header-logo {
   font-family: 'FilmP3', sans-serif;
   font-style: normal;
@@ -54,7 +63,10 @@
   letter-spacing: 0.3em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: $white;
+  transition-property: fill, transform;
+  transition-duration: $main-transition-duration;
+  transition-timing-function: $main-transtition-timing-function;
 
   @media screen and (min-width: 1024px) {
     font-size: 40px;
@@ -62,6 +74,11 @@
 
   @media screen and (min-width: 1280px) {
     margin-right: 86px;
+  }
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    transform: scale(1.2);
   }
 }
 
@@ -77,12 +94,22 @@
 
   letter-spacing: 0.02em;
 
-  color: #f3c653;
+  color: $accent-color;
+  transition-property: fill, transform;
+  transition-duration: $main-transition-duration;
+  transition-timing-function: $main-transtition-timing-function;
 
   @media screen and (min-width: 1024px) {
     padding: 38px 0;
     font-size: 20px;
     line-height: 1.2;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    color: $white;
+    transform: scale(1.2);
   }
 }
 
@@ -98,7 +125,7 @@
   align-items: center;
   letter-spacing: 0.02em;
 
-  color: #ffffff;
+  color: $white;
 
   @media screen and (min-width: 1024px) {
     padding: 7px;
@@ -111,6 +138,17 @@
   @media screen and (max-width: 1023px) {
     display: none;
   }
+
+  transition-property: fill, transform;
+  transition-duration: $main-transition-duration;
+  transition-timing-function: $main-transtition-timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    fill: $white;
+    transform: scale(1.1);
+  }
 }
 
 .margin-tel {
@@ -118,9 +156,38 @@
 }
 
 .icon-contact-mobile {
-  fill: #f3c653;
+  fill: $accent-color;
+  transition-property: fill, transform;
+  transition-duration: $main-transition-duration;
+  transition-timing-function: $main-transtition-timing-function;
 
   @media screen and (min-width: 1024px) {
     margin-right: 8px;
   }
+}
+
+.soc-list {
+  display: flex;
+  gap: 20px;
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
+}
+
+.soc-list__icon {
+  fill: $accent-color;
+  transition-property: fill, transform;
+  transition-duration: $main-transition-duration;
+  transition-timing-function: $main-transtition-timing-function;
+}
+.soc-list__link {
+  transition-property: fill;
+  transition-duration: $main-transition-duration;
+  transition-timing-function: $main-transtition-timing-function;
+}
+.soc-list__icon:hover,
+.soc-list__icon:focus {
+  background-color: transparent;
+  fill: $white;
+  transform: scale(1.5);
 }
