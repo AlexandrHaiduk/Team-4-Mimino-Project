@@ -22,6 +22,8 @@
     <!-- ❗️❗️❗️ Add partials like so for every page -->
     <include src="./partials/header.html"></include>
     <main>
+      <include src="./partials/custom-elements/custom-elements.html"></include>
+
       <include
         src="./partials/restaurant-page/restaurant-page-hero.html"
       ></include>
@@ -38,10 +40,17 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
     <script type="module" src="./js/slider-mini.js"></script>
+    <script type="module" src="./js/custom-elements.js"></script>
 
     <script src="./js/wow.min.js"></script>
     <script>
       new WOW().init();
     </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="" referrerpolicy="no-referrer"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    
   </body>
 </html>
