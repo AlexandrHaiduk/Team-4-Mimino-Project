@@ -1,4 +1,38 @@
-.room__lux,
+.room__lux {
+  background-color: $background-light-lemon;
+  padding: 32px 15px;
+
+  @include tablet {
+    padding: 62px 47px;
+    background-image: linear-gradient(
+      to right,
+      $background-light-lemon 278px,
+      rgba(186, 186, 186, 0.4) 279px,
+      $background-light-lemon 280px,
+      $background-light-lemon 511px,
+      rgba(186, 186, 186, 0.4) 512px,
+      $background-light-lemon 513px,
+      $background-light-lemon 745px,
+      rgba(186, 186, 186, 0.4) 746px,
+      $background-light-lemon 747px
+    );
+  }
+  @include desktop {
+    padding: 72px 85px;
+    background-image: linear-gradient(
+      to right,
+      $background-light-lemon 338px,
+      rgba(186, 186, 186, 0.4) 339px,
+      $background-light-lemon 340px,
+      $background-light-lemon 639px,
+      rgba(186, 186, 186, 0.4) 640px,
+      $background-light-lemon 641px,
+      $background-light-lemon 941px,
+      rgba(186, 186, 186, 0.4) 942px,
+      $background-light-lemon 943px
+    );
+  }
+}
 .room__double {
   background-color: $background-light-lemon;
   padding: 32px 15px;
@@ -8,6 +42,18 @@
   }
   @include desktop {
     padding: 72px 85px;
+    background-image: linear-gradient(
+      to right,
+      $background-light-lemon 338px,
+      rgba(186, 186, 186, 0.4) 339px,
+      $background-light-lemon 340px,
+      $background-light-lemon 639px,
+      rgba(186, 186, 186, 0.4) 640px,
+      $background-light-lemon 641px,
+      $background-light-lemon 941px,
+      rgba(186, 186, 186, 0.4) 942px,
+      $background-light-lemon 943px
+    );
   }
 }
 .room__triple {
@@ -18,6 +64,18 @@
   }
   @include desktop {
     padding: 72px 85px;
+    background-image: linear-gradient(
+      to right,
+      $background-dark-lemon 338px,
+      rgba(186, 186, 186, 0.4) 339px,
+      $background-dark-lemon 340px,
+      $background-dark-lemon 639px,
+      rgba(186, 186, 186, 0.4) 64px,
+      $background-dark-lemon 641px,
+      $background-dark-lemon 941px,
+      rgba(186, 186, 186, 0.4) 940px,
+      $background-dark-lemon 943px
+    );
   }
 }
 .room__description {
