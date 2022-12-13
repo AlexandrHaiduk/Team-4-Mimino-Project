@@ -74,10 +74,12 @@ table {
   color: $accent-color;
   min-width: 236px;
   padding: 12px 22px;
-  background: rgba(0, 0, 0, 0.4);
-  border: 2px solid #ffffff;
+  background: $black;
+  border: 2px solid $white;
   border-radius: 25px;
   cursor: pointer;
+  text-align: center;
+  display: block;
 
   &--hero {
     background-color: rgba(0, 0, 0, 0.4);
