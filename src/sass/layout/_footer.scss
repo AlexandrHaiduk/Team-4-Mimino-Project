@@ -52,13 +52,22 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(90deg,#0e0c07 273px,rgba(122,122,122,.4) 274px,#0e0c07 275px);
 }
 @media screen and (min-width: 1024px) {
     .footer__container{
     justify-content: center;
+    background-image: linear-gradient(90deg,#0e0c07 511px,rgba(122,122,122,.4) 512px,#0e0c07 513px,#0e0c07 745px,rgba(122,122,122,.4) 746px,#0e0c07 747px);
     }
 }
- 
+@media screen and (min-width: 1280px) {
+.footer__container {
+    
+    background-image: linear-gradient(90deg,#0e0c07 639px,rgba(122,122,122,.4) 640px,#0e0c07 641px,#0e0c07 941px,rgba(122,122,122,.4) 942px,#0e0c07 943px);
+}
+}
+
+
 .footer__container-logo{
 display: flex;
 text-align: center;
