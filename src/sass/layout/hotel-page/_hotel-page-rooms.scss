@@ -195,25 +195,17 @@
 .room__triple .room {
   flex-direction: row-reverse;
 }
-.room__button {
-  @include tablet {
-    margin-bottom: 82px;
-  }
 
-  @include desktop {
-    margin-bottom: 110px;
-  }
-}
 .room__slider {
   height: 194px;
 }
-.btn {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  @include tablet {
-    margin-right: 0;
-  }
-}
+// .btn {
+//   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   @include tablet {
+//     margin-right: 0;
+//   }
+// }
 .room__triple .room__detal,
 .room__triple .room__price {
   @include tablet {
@@ -222,9 +214,38 @@
     margin-right: auto;
   }
 }
-.btn:hover,
-.btn:focus {
-  background-color: $white;
-  border: 2px solid $accent-color;
-  border-radius: 25px;
+// .btn:hover,
+// .btn:focus {
+//   background-color: $white;
+//   border: 2px solid $accent-color;
+//   border-radius: 25px;
+// }
+
+.room__button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and(min-width:$tablet) {
+    padding-top: 50px;
+  }
+
+  @media screen and(min-width:$desktop) {
+    padding-top: 80px;
+  }
+}
+
+.room__thumb {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    margin-top: 48px;
+  }
+  &--reverse {
+    flex-direction: column;
+    @media screen and(min-width:$tablet) {
+      flex-direction: row-reverse;
+    }
+  }
 }
