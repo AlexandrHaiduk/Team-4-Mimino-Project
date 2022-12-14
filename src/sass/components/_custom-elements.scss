@@ -1,159 +1,162 @@
 // -------------CUSTOM-CURSOR-[START]-------------
 .cursor {
-    width: 30px;
-    height: 30px;
-    position: fixed;
-    left: 0;
-    top: 0;
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  left: 0;
+  top: 0;
 
-    border-radius: 100%;
-    border: 1px solid black;
-    pointer-events: none;
+  border-radius: 100%;
+  border: 1px solid black;
+  pointer-events: none;
 
-    transition: all 200ms ease-out;
-    transform: translate(calc(-50% + 15px), -50%);
-    z-index: 1000000000;
+  transition: all 200ms ease-out;
+  transform: translate(calc(-50% + 15px), -50%);
+  z-index: 1000000000;
 
-    @media screen and (max-width: 1023px) {
-        width: 0;
-        height: 0;
-        border: 0 solid transparent;
-    }
+  @media screen and (max-width: 1023px) {
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+  }
 }
 
 .cursor2 {
-    position: fixed;
-    width: 15px;
-    height: 15px;
+  position: fixed;
+  width: 15px;
+  height: 15px;
 
-    border-radius: 100%;
-    opacity: .3;
-    pointer-events: none;
-    background-color: white;
+  border-radius: 100%;
+  opacity: .3;
+  pointer-events: none;
+  background-color: white;
 
-    transform: translate(-50%, -50%);
-    transition: width .3s, height .3s, opacity .3s;
+  transform: translate(-50%, -50%);
+  transition: width .3s, height .3s, opacity .3s;
 
-    z-index: 1000000000;
-    @media screen and (max-width: 1023px) {
-        width: 0;
-        height: 0;
-    }
+  z-index: 1000000000;
+  @media screen and (max-width: 1023px) {
+    width: 0;
+    height: 0;
+  }
 }
 
 .hover {
-    background-color: $accent-color;
-    opacity: 0.5;
+  background-color: $accent-color;
+  opacity: 0.5;
 }
 
 .cursorinnerhover {
-    width: 50px;
-    height: 50px;
-    opacity: .5;
+  width: 50px;
+  height: 50px;
+  opacity: .5;
 
-    @media screen and (max-width: 1023px) {
-        width: 0;
-        height: 0;
-    }
+  @media screen and (max-width: 1023px) {
+    width: 0;
+    height: 0;
+  }
 }
 // -------------CUSTOM-CURSOR-[END]-------------
 
 // -------------CUSTOM-HORIZONTAL-INDICATOR-[START]-------------
 .header-indicator {
-    position: fixed;
-    top: 0;
-    z-index: 10;
-    width: 100%;
-    background-color: transparent;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  background-color: transparent;
 }
 
 .progress-container {
-    width: 100%;
-    height: 8px;
-    background: transparent;
+  width: 100%;
+  height: 8px;
+  background: transparent;
 }
 
 .progress-bar {
-    height: 5px;
-    background: $accent-color;
-    border-radius: 0 50px 50px 0;
-    width: 0%;
+  height: 5px;
+  background: $accent-color;
+  border-radius: 0 50px 50px 0;
+  width: 0%;
 }
 // -------------CUSTOM-HORIZONTAL-INDICATOR-[END]-------------
 
 // -------------CUSTOM-SCROLLBAR-[START]-------------
 *::-webkit-scrollbar {
-    width: 14px;
-    background-color: transparent;
+  width: 14px;
+  background-color: transparent;
 }
 
 *::-webkit-scrollbar-track {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: #0E0C07;
-    border-radius: 50px;
-    border: 3px solid $white;
+  background-color: #0E0C07;
+  border-radius: 50px;
+  border: 3px solid $white;
 }
 // -------------CUSTOM-SCROLLBAR-[END]-------------
 
 // -------------CUSTOM-ANCHOR-[START]-------------
+#up-button {
+  transition: background-color .3s,
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
 .up-button {
-    position: fixed;
-    bottom: 50px;
-    right: 25px;
-    z-index: 10;
+  position: fixed;
+  bottom: 30px;
+  right: 15px;
+
+  @media screen and (min-width: 470px) {
+    bottom: 30px;
+    right: 15px;
+  }
+
+  @media screen and (min-width: 1520px) {
+    bottom: 110px;
+    right: 120px;
+  }
 }
 
 .up-button__link {
-    width: 32px;
-    height: 32px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    position: relative;
-    top: -30px;
-    left: 0;
-
-    border-radius: 25px;
-    fill: black;
-
-    &:hover,
-    &:focus {
-        fill: gold;
-    }
-}
-
-.up-button__icon {
-    position: relative;
-    top: 15px;
-    left: 0;
+  width: 80px;
+  height: 80px;
+  fill: $accent-color;
+  border-radius: 12px;
 }
 // -------------CUSTOM-ANCHOR-[END]-------------
 
 // -------------CUSTOM-SELECTION-[START]-------------
 h1::selection {
-    color: $brown-text-color;
+  color: $brown-text-color;
 }
 
 h2::selection {
-    color: $brown-text-color;
+  color: $brown-text-color;
 }
 
 h3::selection {
-    color: $brown-text-color;
+  color: $brown-text-color;
 }
 
 p::selection {
-    color: $brown-text-color;
+  color: $brown-text-color;
 }
 // -------------CUSTOM-SELECTION-[END]-------------
 
 // -------------BUTTONS-ANIMATION-[START]-------------
 .shadow-pop-tr:hover {
-	animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+  animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
 
 @keyframes shadow-pop-tr {
@@ -168,7 +171,7 @@ p::selection {
 }
 
 .shadow-pop-tl:hover {
-	animation: shadow-pop-tl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+  animation: shadow-pop-tl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
 
 @keyframes shadow-pop-tl {
@@ -183,7 +186,7 @@ p::selection {
 }
 
 .shadow-pop-br:hover {
-	animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+  animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
 
 @keyframes shadow-pop-br {
@@ -198,7 +201,7 @@ p::selection {
 }
 
 .shadow-pop-bl:hover {
-	animation: shadow-pop-bl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+  animation: shadow-pop-bl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
 
 @keyframes shadow-pop-bl {
