@@ -62,9 +62,14 @@
 .contacts-item {   
     display: flex;
     align-items: center;
-    gap: 22px;
-    
+    gap: 17px;
     margin-bottom: 16px;
+    @include mobile {
+        gap: 22px;
+                
+    }
+    
+    
     @include tablet {
         display: block;
         margin-bottom: 24px;
@@ -86,8 +91,9 @@
     font-family: 'Montserrat', sans-serif;
     @include font (14px, 1.2, 500, 0.02em);
     color: #C79002;
-    width: 102px;
+    width: 70px;
     @include mobile {
+        width: 102px;
         @include font (20px, 1.2, 500, 0.02em);        
     }
 
@@ -147,10 +153,16 @@
 
 .address-link {    
     text-decoration: none;    
-    width: 183px;
+    // width: 183px;
 
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
+    @include font (10px, 1.21, 400, 0.01em);
+    
+    @include mobile {
+        width: 183px;
+        @include font (16px, 1.21, 400, 0.01em);        
+    }
     @include font (16px, 1.21, 400, 0.01em);    
     color: $contact-text-color;
     @include tablet {
