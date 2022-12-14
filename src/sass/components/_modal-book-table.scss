@@ -1,0 +1,178 @@
+.modal-table {
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    padding: 15px 15px 60px 15px;
+    border-radius: 2px;
+    width: 100%;
+    max-width: 414px;
+
+    background-color: $background-light-lemon;
+    transform: translate(-50%, 50%);
+    z-index: 5;
+
+    @include tablet {
+        width: 712px;
+        max-width: 712px;
+        padding: 60px;
+        transform: translate(-50%, 20%);
+    }
+
+    @include mobile {
+        transform: translate(-50%, 15%);
+    }
+
+
+}
+
+.modal__close-button {
+    border: none;
+    outline: none;
+    margin-left: auto;
+    display: block;
+    background: $background-light-lemon;
+    padding: 0;
+
+    @include tablet {
+        margin-top: -44px;
+        margin-right: -44px;
+    }
+    cursor: pointer;
+}
+
+.form__title {
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+
+    color: $black;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include tablet {
+        font-size: 40px;
+        line-height: 1.15;
+    }
+}
+
+.form__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @include tablet {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: flex-end;
+    }
+}
+
+.form__container:nth-of-type(2) {
+    margin-top: 20px;
+}
+
+.form__container:nth-of-type(3) {
+    margin-top: 20px;
+}
+
+.form-table__input {
+    width: 100%;
+    max-width: 384px;
+    height: 54px;
+    margin-bottom: 8px;
+    padding: 12px;
+
+    border: 1px solid $brown-text-color;
+    border-radius: 2px;
+    outline: none;
+
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.05em;
+
+    color: #808080;
+    background-color: $background-light-lemon;
+    cursor: pointer;
+
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.form__label {
+    display: block;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.02em;
+
+    color: $brown-text-color;
+    cursor: pointer;
+
+    @include tablet {
+        width: 288px;
+        font-size: 16;
+        line-height: 1.25;
+    }
+}
+
+.form__label--select {
+    position: relative;
+}
+
+.form__label--select::after {
+    background-image: url('/src/images/icons/arrow-down.svg');
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 15px;
+    right: 15px;
+    z-index: 3;
+
+    background-color: $background-light-lemon;
+    pointer-events: none;
+}
+
+.form-button {
+    display: block;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 40px;
+
+    border: 1px solid $accent-color;
+    border-radius: 2px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    color: $white;
+    background: $black;
+    transition: background 250ms linear, color 250ms linear;
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+        color: $black;
+    }
+}

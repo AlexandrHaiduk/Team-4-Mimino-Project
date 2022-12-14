@@ -2,6 +2,7 @@
 @import './utils/vars';
 @import './utils/mixins';
 @import './base/common';
+@import './components/custom-elements';
 @import './components/slider';
 @import './components/slider-mini';
 @import './components/slider-mini-mod';
@@ -36,3 +37,10 @@
 @import './components/modal-book-room';
 @import './components/modal-book-table';
 @import './components/modal-room-price';
+
+.test-navigation {
+  background-color: bisque;
+  font-size: 24px;
+  padding: 10px;
+  border: 2px solid red;
+}

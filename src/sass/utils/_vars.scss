@@ -5,10 +5,14 @@ $white: #ffffff;
 $black: #000000;
 $background-light-lemon: #fffdee;
 $background-dark-lemon: #f0ecd6;
+$bg-gradient-color: rgba(186, 186, 186, 0.4);
 $accent-color: #f3c653;
 $main-text-color: #5f5f5f;
 $brown-text-color: #c79002;
 $menu-text-color: #7a7a7a;
+$footer-bc: #0e0c07;
+$bg-gradient-footer-color: rgba(122, 122, 122, 0.4);
+
 $times-font: 'TimesNewRoman', 'sans-serif';
 $montserrat-font: 'Montserrat', 'sans-serif';
 $film-font: 'FilmP3', 'sans-serif';
@@ -18,4 +22,4 @@ $main-transtition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 $contact-text-color: #494848;
 $picture-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-$picture-border: 1px solid #bababa; ;
+$picture-border: 1px solid #bababa;

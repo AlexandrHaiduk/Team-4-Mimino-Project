@@ -1,0 +1,75 @@
+.swiper-mini-mod {
+  margin-left: auto;
+  position: relative;
+
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  max-width: 370px;
+  height: 320px;
+
+  @media screen and (max-width: 1023px) {
+    right: -15px;
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    max-width: 662px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 874px;
+  }
+}
+.swiper-mini-mod__reverse {
+  margin-left: 0;
+  margin-right: auto;
+  @media screen and (max-width: 1023px) {
+    right: 15px;
+  }
+}
+.swiper-wrapper-mini {
+  height: 245px;
+
+  margin-left: auto;
+  display: flex;
+}
+.swiper-mini-mod .swiper-slide-mini {
+  width: 270px;
+}
+.swiper-mini-mod .swiper-slide-mini-2 {
+  width: 162px;
+}
+
+.swiper-button-prev-mini-mod,
+.swiper-button-next-mini-mod {
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.swiper-button-prev-mini-mod > svg,
+.swiper-button-next-mini-mod > svg {
+  fill: currentColor;
+}
+.swiper-button-next-mini-mod {
+  left: 70px;
+}
+.swiper-mini-mod.swiper-mini-mod__reverse .swiper-button-prev-mini-mod {
+  right: 70px;
+}
+.swiper-mini-mod.swiper-mini-mod__reverse .swiper-button-next-mini-mod {
+  left: 335px;
+  @include tablet {
+    left: 630px;
+  }
+  @include desktop {
+    left: 840px;
+  }
+}
