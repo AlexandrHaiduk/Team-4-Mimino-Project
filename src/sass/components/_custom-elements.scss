@@ -13,6 +13,12 @@
     transition: all 200ms ease-out;
     transform: translate(calc(-50% + 15px), -50%);
     z-index: 1000000000;
+
+    @media screen and (max-width: 1023px) {
+        width: 0;
+        height: 0;
+        border: 0 solid transparent;
+    }
 }
 
 .cursor2 {
@@ -29,6 +35,10 @@
     transition: width .3s, height .3s, opacity .3s;
 
     z-index: 1000000000;
+    @media screen and (max-width: 1023px) {
+        width: 0;
+        height: 0;
+    }
 }
 
 .hover {
@@ -40,6 +50,11 @@
     width: 50px;
     height: 50px;
     opacity: .5;
+
+    @media screen and (max-width: 1023px) {
+        width: 0;
+        height: 0;
+    }
 }
 // -------------CUSTOM-CURSOR-[END]-------------
 
@@ -60,7 +75,7 @@
 
 .progress-bar {
     height: 5px;
-    background: #f3c653;
+    background: $accent-color;
     border-radius: 0 50px 50px 0;
     width: 0%;
 }
@@ -79,7 +94,7 @@
 *::-webkit-scrollbar-thumb {
     background-color: #0E0C07;
     border-radius: 50px;
-    border: 3px solid #ffffff;
+    border: 3px solid $white;
 }
 // -------------CUSTOM-SCROLLBAR-[END]-------------
 

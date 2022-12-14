@@ -36,7 +36,11 @@
     }
 
     @include mobile {
-        transform: translate(-50%, 15%);
+        transform: translate(-50%, 10%);
+    }
+
+    @media screen and (max-width: 1023px) {
+        transform: translate(-50%, 10%);
     }
 }
 
