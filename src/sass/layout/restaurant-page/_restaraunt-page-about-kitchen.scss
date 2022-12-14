@@ -1,23 +1,4 @@
-/*.main-page-about-kitchen {
-    min-height: 1191px;
-    @include tablet {
-        min-height: 1238px;
-    }
-    @include desktop {
-        min-height: 1275px;
-    }
-}*/
-
 .about-kitchen{
-   /* min-height: 1191px;
-    @include tablet {
-        min-height: 1238px;
-    }
-
-    @include desktop {
-        min-height: 1275px;
-    }*/
-
     background-color: $background-light-lemon;
     background-image: repeating-linear-gradient(
         to right ,
@@ -162,9 +143,6 @@
 
     
     
-    
-    
-
     @include tablet {
         margin-top: -32px;
         margin-bottom: 0;
