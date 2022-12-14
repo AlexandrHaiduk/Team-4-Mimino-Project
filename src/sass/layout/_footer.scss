@@ -86,8 +86,8 @@ align-items: center;
     color: $accent-color;
     margin-right: 85px;
     transition: color $main-transition-duration $main-transtition-timing-function;
-.footer__logo:hover,
-.footer__logo:focus{
+   &:hover,
+   &:focus{
     color: $white;
 }
 }
