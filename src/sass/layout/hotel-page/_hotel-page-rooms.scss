@@ -1,5 +1,8 @@
 .room__lux {
   background-color: $background-light-lemon;
+}
+
+.room__lux > .container {
   padding: 32px 15px;
 
   @include tablet {
@@ -35,10 +38,25 @@
 }
 .room__double {
   background-color: $background-light-lemon;
+}
+.room__double > .container {
+  // background-color: $background-light-lemon;
   padding: 32px 15px;
 
   @include tablet {
     padding: 62px 47px;
+    background-image: linear-gradient(
+      to right,
+      $background-light-lemon 278px,
+      rgba(186, 186, 186, 0.4) 279px,
+      $background-light-lemon 280px,
+      $background-light-lemon 511px,
+      rgba(186, 186, 186, 0.4) 512px,
+      $background-light-lemon 513px,
+      $background-light-lemon 745px,
+      rgba(186, 186, 186, 0.4) 746px,
+      $background-light-lemon 747px
+    );
   }
   @include desktop {
     padding: 72px 85px;
@@ -58,9 +76,25 @@
 }
 .room__triple {
   background-color: $background-dark-lemon;
+}
+
+.room__triple > .container {
+  // background-color: $background-dark-lemon;
   padding: 32px 15px;
   @include tablet {
     padding: 62px 47px;
+    background-image: linear-gradient(
+      to right,
+      $background-dark-lemon 278px,
+      rgba(186, 186, 186, 0.4) 279px,
+      $background-dark-lemon 280px,
+      $background-dark-lemon 511px,
+      rgba(186, 186, 186, 0.4) 512px,
+      $background-dark-lemon 513px,
+      $background-dark-lemon 745px,
+      rgba(186, 186, 186, 0.4) 746px,
+      $background-dark-lemon 747px
+    );
   }
   @include desktop {
     padding: 72px 85px;
