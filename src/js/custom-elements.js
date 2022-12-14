@@ -66,7 +66,7 @@ $(document).ready(function () {
                     scrollTop: $(hash).offset().top,
                 },
                 //duration
-                700,
+                0,
                 function () {
                     // Add hash (#) to URL when done scrolling (default click behavior)
                     window.location.hash = hash;

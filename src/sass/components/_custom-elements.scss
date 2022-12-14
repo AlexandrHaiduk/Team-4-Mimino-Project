@@ -47,7 +47,7 @@
 .header-indicator {
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 10;
     width: 100%;
     background-color: transparent;
 }
@@ -88,6 +88,7 @@
     position: fixed;
     bottom: 50px;
     right: 25px;
+    z-index: 10;
 }
 
 .up-button__link {
@@ -118,6 +119,18 @@
 // -------------CUSTOM-ANCHOR-[END]-------------
 
 // -------------CUSTOM-SELECTION-[START]-------------
+h1::selection {
+    color: $brown-text-color;
+}
+
+h2::selection {
+    color: $brown-text-color;
+}
+
+h3::selection {
+    color: $brown-text-color;
+}
+
 p::selection {
     color: $brown-text-color;
 }

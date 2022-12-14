@@ -17,8 +17,6 @@ const refsRoom = {
   }
 
 const modalOpenRoom = (refs) => {
-  console.log(refs)
-  console.log(123)
   if(refs.openModalBtn)refs.openModalBtn.addEventListener('click', toggleModalRoom);
   if(refs.openModalBtn1)refs.openModalBtn1.addEventListener('click', toggleModalRoom);
   if(refs.closeModalBtn)refs.closeModalBtn.addEventListener('click', toggleModalRoom);
