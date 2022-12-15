@@ -1,0 +1,136 @@
+.swiper-mini {
+  margin-left: auto;
+  position: relative;
+
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  max-width: 330px;
+  height: 305px;
+
+  @media screen and (max-width: 1023px) {
+    margin-top: 32px;
+    right: -15px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    max-width: 430px;
+    height: 258px;
+    top: -32px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: -110px;
+    max-width: 530px;
+    height: 317px;
+  }
+}
+
+.swiper-mini__reverse {
+  @media screen and (max-width: 1023px) {
+    right: 15px;
+  }
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.swiper-mini__room {
+  @media screen and (max-width: 1023px) {
+    margin-top: 32px;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1024px) {
+    top: -0;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 0;
+    right: -40px;
+  }
+}
+.swiper-mini__room--reverse {
+  margin-left: 0;
+  margin-right: auto;
+  right: 15px;
+}
+.swiper-wrapper-mini {
+  height: 245px;
+
+  margin-left: auto;
+  display: flex;
+}
+
+.swiper-slide-mini {
+  width: 245px;
+  height: 245px;
+}
+
+.swiper-button-prev-mini,
+.swiper-button-next-mini {
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.swiper-button-prev-mini {
+  right: 70px;
+}
+.swiper-button-next-mini {
+  right: 0;
+}
+
+.swiper-mini.swiper-mini__reverse .swiper-button-prev-mini {
+  right: 285px;
+
+  @include tablet {
+    right: 395px;
+  }
+  @include desktop {
+    right: 495px;
+  }
+}
+
+.swiper-mini.swiper-mini__reverse .swiper-button-next-mini {
+  right: 215px;
+  @include tablet {
+    right: 325px;
+  }
+  @include desktop {
+    right: 425px;
+  }
+}
+.swiper-mini__room.swiper-mini__room--reverse .swiper-button-prev-mini {
+  @media screen and (max-width: 1023px) {
+    right: 280px;
+  }
+}
+
+.swiper-mini__room.swiper-mini__room--reverse .swiper-button-next-mini {
+  @media screen and (max-width: 1023px) {
+    right: 210px;
+  }
+}
+
+.swiper-button-prev-mini__reverse {
+  right: 85px;
+  @media screen and (min-width: 1024px) {
+    right: 395px;
+  }
+  @media screen and (min-width: 1280px) {
+    right: 495px;
+  }
+}
+
+.swiper-button-prev-next__reverse {
+  right: 15px;
+  @media screen and (min-width: 1024px) {
+    right: 330px;
+  }
+  @media screen and (min-width: 1280px) {
+    right: 430px;
+  }
+}

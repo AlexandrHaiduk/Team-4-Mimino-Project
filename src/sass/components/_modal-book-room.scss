@@ -1,0 +1,113 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-room {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    padding: 15px 15px 60px 15px;
+    border-radius: 2px;
+    max-width: 414px;
+
+    background-color: $background-light-lemon;
+    transform: translate(-50%, 50%);
+    z-index: 3;
+
+    @include tablet {
+        width: 712px;
+        max-width: 712px;
+        padding: 60px;
+        transform: translate(-50%, 20%);
+    }
+
+    @include mobile {
+        transform: translate(-50%, 15%);
+    }
+}
+
+.modal__close-button {
+    display: block;
+    margin-left: auto;
+    padding: 0;
+
+    border: none;
+    outline: none;
+    background: $background-light-lemon;
+    cursor: pointer;
+}
+
+.form-room__title {
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $black;
+}
+
+.form-room__input {
+    width: 100%;
+    max-width: 384px;
+    height: 54px;
+    margin-bottom: 8px;
+    padding: 12px;
+
+    border: 1px solid $brown-text-color;
+    border-radius: 2px;
+    outline: none;
+
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.05em;
+
+    color: #808080;
+    background-color: $background-light-lemon;
+    cursor: pointer;
+
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.form-room__label {
+    display: block;
+    margin-bottom: 20px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.02em;
+    color: $brown-text-color;
+
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.form-room__label:nth-of-type(5) {
+    margin-bottom: 0;
+}

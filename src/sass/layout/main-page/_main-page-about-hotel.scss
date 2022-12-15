@@ -1,0 +1,184 @@
+.container--lines {
+  background-image: linear-gradient(
+    to right,
+    $background-light-lemon 138px,
+    $bg-gradient-color 139px,
+    $background-light-lemon 140px,
+    $background-light-lemon 273px,
+    $bg-gradient-color 274px,
+    $background-light-lemon 275px
+  );
+
+  @include tablet {
+    background-image: linear-gradient(
+      to right,
+      $background-light-lemon 278px,
+      $bg-gradient-color 279px,
+      $background-light-lemon 280px,
+      $background-light-lemon 511px,
+      $bg-gradient-color 512px,
+      $background-light-lemon 513px,
+      $background-light-lemon 745px,
+      $bg-gradient-color 746px,
+      $background-light-lemon 747px
+    );
+  }
+
+  @include desktop {
+    background-image: linear-gradient(
+      to right,
+      $background-light-lemon 338px,
+      $bg-gradient-color 339px,
+      $background-light-lemon 340px,
+      $background-light-lemon 639px,
+      $bg-gradient-color 640px,
+      $background-light-lemon 641px,
+      $background-light-lemon 941px,
+      $bg-gradient-color 942px,
+      $background-light-lemon 943px
+    );
+  }
+}
+.about-hotel {
+  background-color: $background-light-lemon;
+
+  &__text {
+    padding-top: 18px;
+    margin-bottom: 12px;
+    text-align: end;
+
+    font-family: 'TimesNewRoman';
+    @include font(20, 1.15, 400, null);
+    color: #b4b4b4;
+
+    @include tablet {
+      margin-top: 120px;
+      @include font(32, 1.15, 400, null);
+    }
+  }
+  &__mimino {
+    margin-bottom: 12px;
+    text-align: end;
+
+    font-family: 'FilmP3';
+    @include font(40, 1.08, 700, 12);
+    color: $contact-text-color;
+
+    @include tablet {
+      margin-bottom: 24px;
+      @include font(64, 1.08, 700, 19.2);
+    }
+  }
+  &__description {
+    margin-bottom: 28px;
+    margin-left: auto;
+
+    font-family: 'Montserrat';
+    display: block;
+    width: 242px;
+    @include font(12, 1.22, 600, 0.24);
+    color: $main-text-color;
+
+    @include tablet {
+      width: 419px;
+      @include font(16, 1.22, 600, 0.32);
+    }
+
+    @include desktop {
+      width: 488px;
+    }
+  }
+  &__descr {
+    display: block;
+    width: 170px;
+    @include font(12, 1.22, 600, 0.24);
+    color: $brown-text-color;
+
+    @include tablet {
+      width: 312px;
+      margin-left: 220px;
+      margin-top: -110px;
+      @include font(16, 1.22, 600, 0.32);
+    }
+
+    @include desktop {
+      margin-left: 294px;
+      margin-top: -200px;
+    }
+  }
+  &__cover {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__wrap {
+    @include tablet {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+  }
+
+  &__picture {
+    box-shadow: $picture-shadow;
+  }
+}
+
+.bedroom-image__thumb {
+  display: flex;
+  justify-content: start;
+
+  margin-bottom: 32px;
+
+  @include tablet {
+    margin-top: -32px;
+    margin-left: 75px;
+  }
+
+  @include desktop {
+    margin-top: -32px;
+    margin-left: 95px;
+  }
+}
+
+.hotel-image__thumb {
+  box-shadow: $picture-shadow;
+
+  @include tablet {
+    margin-top: -47px;
+  }
+
+  @include desktop {
+    margin-top: -80px;
+  }
+}
+
+.about-hotel__slider {
+  height: 377px;
+
+  @include tablet {
+    margin-top: -139px;
+
+    height: 400px;
+    width: 512px;
+  }
+
+  @include desktop {
+    margin-top: -225px;
+
+    height: 400px;
+    width: 640px;
+  }
+}
+
+.visually-hidden {
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
