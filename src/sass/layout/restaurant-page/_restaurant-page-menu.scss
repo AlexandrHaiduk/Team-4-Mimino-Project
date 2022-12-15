@@ -1,3 +1,44 @@
+.container--lines-dark {
+  background-image: linear-gradient(
+    to right,
+    $background-dark-lemon 138px,
+    $bg-gradient-color 139px,
+    $background-dark-lemon 140px,
+    $background-dark-lemon 273px,
+    $bg-gradient-color 274px,
+    $background-dark-lemon 275px
+  );
+
+  @include tablet {
+    background-image: linear-gradient(
+      to right,
+      $background-dark-lemon 278px,
+      $bg-gradient-color 279px,
+      $background-dark-lemon 280px,
+      $background-dark-lemon 511px,
+      $bg-gradient-color 512px,
+      $background-dark-lemon 513px,
+      $background-dark-lemon 745px,
+      $bg-gradient-color 746px,
+      $background-dark-lemon 747px
+    );
+  }
+
+  @include desktop {
+    background-image: linear-gradient(
+      to right,
+      $background-dark-lemon 338px,
+      $bg-gradient-color 339px,
+      $background-dark-lemon 340px,
+      $background-dark-lemon 639px,
+      $bg-gradient-color 640px,
+      $background-dark-lemon 641px,
+      $background-dark-lemon 941px,
+      $bg-gradient-color 942px,
+      $background-dark-lemon 943px
+    );
+  }
+}
 table,
 tbody,
 caption,
@@ -19,16 +60,19 @@ table {
   border-spacing: 0;
   width: 100%;
 }
-
 .menu {
-  background-color: $background-light-lemon;
-  padding: 32px 0;
+  background-color: $background-dark-lemon;
+}
+
+.menu > .container {
+  padding: 32px 15px;
+  background-color: $background-dark-lemon;
 
   @include tablet {
-    padding: 58px 0 40px 0;
+    padding: 58px 48px 40px 47px;
   }
   @include desktop {
-    padding: 58px 0 60px 0;
+    padding: 58px 85px 60px 85px;
   }
 }
 
