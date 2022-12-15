@@ -123,11 +123,11 @@
 .container--hero-room {
   height: 100%;
   padding-top: 483px;
-  padding-bottom: 40px;
+  padding-bottom: 14px;
 
   @include tablet {
     padding-top: 468px;
-    padding-bottom: 64px;
+    padding-bottom: 24px;
   }
 
   @include desktop {
@@ -139,11 +139,20 @@
 .hero-room-content {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-end;
   @include tablet {
     align-items: flex-end;
   }
   @include desktop {
     align-items: center;
+  }
+}
+
+.text-wrap {
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
   }
 }
 
@@ -162,15 +171,15 @@
   @include font(12px, 15px, 700, 0.02em);
   color: #ffffff;
   @include tablet {
-    @include font(16px, 20px, 700, 0.05em);
+    @include font(16px, 20px, 700, 0.02em);
     margin-bottom: 0;
     width: 400px;
   }
 }
 
 .btn--hero-room {
-  margin-left: auto;
-  height: 48px;
+  // margin-left: auto;
+  // height: 48px;
 }
 
 .hero-room-address {
@@ -194,6 +203,7 @@
     height: 56px;
     left: 47px;
     top: 640px;
+    gap: 16px;
   }
   @include desktop {
     display: none;
@@ -202,20 +212,28 @@
 
 .hero-room-address__icon {
   fill: $accent-color;
+  @include tablet {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .hero-room-socials {
-  position: absolute;
-  bottom: 14px;
-  left: 15px;
+  // position: absolute;
+  // bottom: 14px;
+  // left: 15px;
+  margin-top: 16px;
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 10px;
   @include tablet {
+    position: absolute;
     left: 372;
     bottom: 38px;
     flex-direction: row;
+    margin-top: 0;
+    gap: 22px;
   }
   @include desktop {
     display: none;
