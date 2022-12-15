@@ -74,6 +74,10 @@
   align-items: center;
   justify-content: center;
   background-color: transparent;
+
+  &:hover {
+    fill: $accent-color;
+  }
 }
 
 .swiper-button-prev-mini {

@@ -114,6 +114,7 @@
   left: 15px;
   width: 325px;
   z-index: 3;
+  text-stroke: 2px black;
   @include tablet {
     margin-bottom: 0;
     bottom: 104px;
@@ -156,6 +157,7 @@
   flex-wrap: wrap;
   z-index: 3;
   position: relative;
+
   @include tablet {
     align-items: flex-end;
   }
