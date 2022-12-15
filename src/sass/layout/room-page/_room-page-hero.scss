@@ -1,7 +1,37 @@
+.swiper {
+  position: absolute;
+  background: linear-gradient(#000 0%, #0000008c 54.17%, #0000 100%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  // z-index: 1;
+  &__img {
+    height: 100%;
+    width: 100%;
+  }
+  &__icon {
+    width: 37px;
+    height: 37px;
+    fill: $accent-color;
+  }
+}
+.swiper-button-next,
+.swiper-button-prev {
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.65);
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  display: none;
+}
+
 .gradient-overlay {
   position: absolute;
   width: 100%;
   height: 143px;
+  z-index: 2;
   background: linear-gradient(
     180deg,
     #000000 0%,
@@ -26,6 +56,7 @@
 .hero-room-address {
   gap: 13px;
   position: absolute;
+  z-index: 3;
   right: 15px;
   color: #e5e5e5;
   fill: $accent-color;
@@ -58,6 +89,8 @@
   width: 20px;
   height: 20px;
   color: $accent-color;
+  position: relative;
+  z-index: 3;
 }
 
 .hero-room-address__icon {
@@ -80,6 +113,7 @@
   bottom: 118px;
   left: 15px;
   width: 325px;
+  z-index: 3;
   @include tablet {
     margin-bottom: 0;
     bottom: 104px;
@@ -94,30 +128,11 @@
 
 .hero-room {
   position: relative;
-  background-image: url(../images/hero/bg-hot.jpg);
   max-width: 1280px;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  @include retina2x {
-    background-image: url(../images/hero/bg-hot@2x.jpg);
-  }
-
-  @include tablet {
-    background-image: url(../images/hero/tab-bg-hot.jpg);
-    height: 720px;
-    @include retina2x {
-      background-image: url(../images/hero/tab-bg-hot@2x.jpg);
-    }
-  }
-
-  @include desktop {
-    background-image: url(../images/hero/desk-bg-hot.jpg);
-    @include retina2x {
-      background-image: url(../images/hero/desk-bg-hot@2x.jpg);
-    }
-  }
 }
 
 .container--hero-room {
@@ -139,6 +154,8 @@
 .hero-room-content {
   display: flex;
   flex-wrap: wrap;
+  z-index: 3;
+  position: relative;
   @include tablet {
     align-items: flex-end;
   }
@@ -212,6 +229,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  z-index: 3;
   @include tablet {
     left: 372;
     bottom: 38px;
