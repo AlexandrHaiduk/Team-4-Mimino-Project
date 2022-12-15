@@ -1,206 +1,188 @@
-.about-kitchen{
-    background-color: $background-light-lemon;
-    background-image: repeating-linear-gradient(
-        to right ,
-        $background-light-lemon -5px,
-        $background-light-lemon 140px,
-        rgba(186, 186, 186, 0.4) 140px,
-        rgba(186, 186, 186, 0.4) 141px,
-        $background-light-lemon 141px,
-        $background-light-lemon 275px,
-        rgba(186, 186, 186, 0.4) 275px,
-        rgba(186, 186, 186, 0.4) 276px,
-        $background-light-lemon 276px,
-        $background-light-lemon 415px
-        );
-       
+.container--lines-light {
+  background-image: linear-gradient(
+    to right,
+    $background-light-lemon 138px,
+    $bg-gradient-color 139px,
+    $background-light-lemon 140px,
+    $background-light-lemon 273px,
+    $bg-gradient-color 274px,
+    $background-light-lemon 275px
+  );
+
+  @include tablet {
+    background-image: linear-gradient(
+      to right,
+      $background-light-lemon 278px,
+      $bg-gradient-color 279px,
+      $background-light-lemon 280px,
+      $background-light-lemon 511px,
+      $bg-gradient-color 512px,
+      $background-light-lemon 513px,
+      $background-light-lemon 745px,
+      $bg-gradient-color 746px,
+      $background-light-lemon 747px
+    );
+  }
+
+  @include desktop {
+    background-image: linear-gradient(
+      to right,
+      $background-light-lemon 338px,
+      $bg-gradient-color 339px,
+      $background-light-lemon 340px,
+      $background-light-lemon 639px,
+      $bg-gradient-color 640px,
+      $background-light-lemon 641px,
+      $background-light-lemon 941px,
+      $bg-gradient-color 942px,
+      $background-light-lemon 943px
+    );
+  }
+}
+
+.about-kitchen {
+  background-color: $background-light-lemon;
+  &__text {
+    margin-top: 12px;
+    /*margin-bottom: 12px;*/
+
+    font-family: 'TimesNewRoman';
+    @include font(20, 1.15, 400, null);
+    color: #b4b4b4;
+
     @include tablet {
-        background-image: repeating-linear-gradient(
-            to right ,
-            $background-light-lemon -5px,
-            $background-light-lemon 275px,
-            rgba(186, 186, 186, 0.4) 275px,
-            rgba(186, 186, 186, 0.4) 276px,
-            $background-light-lemon 276px,
-            $background-light-lemon 746px,
-            rgba(186, 186, 186, 0.4) 746px,
-            rgba(186, 186, 186, 0.4) 747px,
-            $background-light-lemon 747px,
-            $background-light-lemon 1024px
-            );
+      margin-top: 120px;
+      @include font(32, 1.15, 400, null);
+    }
+  }
+  &__mimino {
+    margin-bottom: 12px;
+
+    font-family: 'FilmP3';
+    @include font(40, 1.08, 700, 12);
+    color: $contact-text-color;
+
+    @include tablet {
+      display: block;
+      margin-bottom: 24px;
+      width: 202px;
+      @include font(64, 1.08, 700, 19.2);
+    }
+  }
+  &__description {
+    margin-bottom: 28px;
+
+    font-family: 'Montserrat';
+    display: block;
+    width: 258px;
+    @include font(12, 1.22, 600, 0.24);
+    color: $main-text-color;
+
+    @include tablet {
+      width: 439px;
+      @include font(16, 1.22, 700, 0.32);
     }
 
     @include desktop {
-        background-image: repeating-linear-gradient(
-            to right ,
-            $background-light-lemon -5px,
-            $background-light-lemon 338px,
-            rgba(186, 186, 186, 0.4) 338px,
-            rgba(186, 186, 186, 0.4) 339px,
-            $background-light-lemon 339px,
-            $background-light-lemon 640px,
-            rgba(186, 186, 186, 0.4) 640px,
-            rgba(186, 186, 186, 0.4) 641px,
-            $background-light-lemon 641px,
-            $background-light-lemon 942px,
-            rgba(186, 186, 186, 0.4) 942px,
-            rgba(186, 186, 186, 0.4) 943px,
-            $background-light-lemon 943px,
-            $background-light-lemon 1800px
-            );
+      width: 512px;
+    }
+  }
+  &__descr {
+    display: block;
+    width: 170px;
+    @include font(12, 1.22, 600, 0.24);
+    color: $brown-text-color;
+
+    @include tablet {
+      width: 312px;
+      margin-right: 220px;
+      margin-top: -110px;
+      @include font(16, 1.22, 600, 0.32);
     }
 
-    &__text {
-        margin-top: 12px;
-        /*margin-bottom: 12px;*/
-
-        font-family: 'TimesNewRoman';
-        @include font (20, 1.15, 400, null);
-        color: #b4b4b4;
-
-        @include tablet {       
-            margin-top: 120px; 
-            @include font (32, 1.15, 400, null)
-        };
+    @include desktop {
+      width: 312px;
+      margin-right: 306px;
+      margin-top: -200px;
     }
-    &__mimino {
-        margin-bottom: 12px;
-        
-        
-        font-family: 'FilmP3';
-        @include font (40, 1.08, 700, 12);
-        color: $contact-text-color;
+  }
+  &__cover {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-        @include tablet {
-            display: block;
-            margin-bottom: 24px;
-            width: 202px;
-            @include font (64, 1.08, 700, 19.2)
-        }
-
+  &__wrap {
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
     }
-    &__description{  
-        margin-bottom: 28px;
-        
-        font-family: 'Montserrat';
-        display: block;
-        width: 258px;
-        @include font (12, 1.22, 600, 0.24);
-        color: $main-text-color;
-
-        @include tablet {
-            width: 439px;
-            @include font (16, 1.22, 700, 0.32)
-        }
-
-        @include desktop {
-            width: 512px;
-        }
-    }  
-    &__descr {
-        display: block;
-        width: 170px;
-        @include font (12, 1.22, 600, 0.24);
-        color: $brown-text-color;
-
-        @include tablet {
-            width: 312px;
-            margin-right: 220px;
-            margin-top: -110px;
-            @include font (16, 1.22, 600, 0.32)
-        }
-
-        @include desktop {
-            width: 312px;
-            margin-right: 306px;
-            margin-top: -200px;
-        }
-    }
-    &__cover {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        
-    }  
-
-    &__wrap {
-        @include tablet {
-            display: flex;
-            justify-content: space-between;
-        }
-    }
-    &__picture {
-        box-shadow: $picture-shadow;
-    }
-    
+  }
+  &__picture {
+    box-shadow: $picture-shadow;
+  }
 }
 
 .kitchen-image__kuchina {
-    display: flex;
-    justify-content: end;
-    margin-bottom: 32px;
+  display: flex;
+  justify-content: end;
+  margin-bottom: 32px;
 
-    
-    
-    @include tablet {
-        margin-top: -32px;
-        margin-bottom: 0;
-        margin-right: 63px;
-    }
+  @include tablet {
+    margin-top: -32px;
+    margin-bottom: 0;
+    margin-right: 63px;
+  }
 
-    @include desktop {
-        margin-right: 95px;
-        margin-bottom: 0;
-    }
-
+  @include desktop {
+    margin-right: 95px;
+    margin-bottom: 0;
+  }
 }
 
 .meat-image__thumb {
-    margin-bottom: 32px;
-    box-shadow: $picture-shadow;
+  margin-bottom: 32px;
+  box-shadow: $picture-shadow;
 
-    @include tablet {
-        margin-bottom: 0;
-        margin-top: -15px;
-    }
+  @include tablet {
+    margin-bottom: 0;
+    margin-top: -15px;
+  }
 
-    @include desktop {
-        margin-bottom: 0;
-        margin-top: -80px;
-    }
+  @include desktop {
+    margin-bottom: 0;
+    margin-top: -80px;
+  }
 }
 
 .about-kitchen start__slider {
-    height: 377px;
-    
+  height: 377px;
 
-    @include tablet {
-        margin-left: 465px;
-        margin-top: -139px;
+  @include tablet {
+    margin-left: 465px;
+    margin-top: -139px;
 
+    height: 400px;
+    width: 512px;
+  }
 
-        height: 400px;
-        width: 512px;
-    }
+  @include desktop {
+    margin-left: 555px;
+    margin-top: -225px;
 
-    @include desktop {
-        margin-left: 555px;
-        margin-top: -225px;
-
-        height: 400px;
-        width: 640px;
-    }
+    height: 400px;
+    width: 640px;
+  }
 }
 
 .visually-hidden {
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-    }
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
