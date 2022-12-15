@@ -1,51 +1,41 @@
 .container--lines {
-  background-image: repeating-linear-gradient(
+  background-image: linear-gradient(
     to right,
-    $background-light-lemon -5px,
+    $background-light-lemon 138px,
+    $bg-gradient-color 139px,
     $background-light-lemon 140px,
-    rgba(186, 186, 186, 0.4) 140px,
-    rgba(186, 186, 186, 0.4) 141px,
-    $background-light-lemon 141px,
-    $background-light-lemon 275px,
-    rgba(186, 186, 186, 0.4) 275px,
-    rgba(186, 186, 186, 0.4) 276px,
-    $background-light-lemon 276px,
-    $background-light-lemon 415px
+    $background-light-lemon 273px,
+    $bg-gradient-color 274px,
+    $background-light-lemon 275px
   );
 
   @include tablet {
-    background-image: repeating-linear-gradient(
+    background-image: linear-gradient(
       to right,
-      $background-light-lemon -5px,
-      $background-light-lemon 275px,
-      rgba(186, 186, 186, 0.4) 275px,
-      rgba(186, 186, 186, 0.4) 276px,
-      $background-light-lemon 276px,
-      $background-light-lemon 746px,
-      rgba(186, 186, 186, 0.4) 746px,
-      rgba(186, 186, 186, 0.4) 747px,
-      $background-light-lemon 747px,
-      $background-light-lemon 1024px
+      $background-light-lemon 278px,
+      $bg-gradient-color 279px,
+      $background-light-lemon 280px,
+      $background-light-lemon 511px,
+      $bg-gradient-color 512px,
+      $background-light-lemon 513px,
+      $background-light-lemon 745px,
+      $bg-gradient-color 746px,
+      $background-light-lemon 747px
     );
   }
 
   @include desktop {
-    background-image: repeating-linear-gradient(
+    background-image: linear-gradient(
       to right,
-      $background-light-lemon -5px,
       $background-light-lemon 338px,
-      rgba(186, 186, 186, 0.4) 338px,
-      rgba(186, 186, 186, 0.4) 339px,
-      $background-light-lemon 339px,
-      $background-light-lemon 640px,
-      rgba(186, 186, 186, 0.4) 640px,
-      rgba(186, 186, 186, 0.4) 641px,
+      $bg-gradient-color 339px,
+      $background-light-lemon 340px,
+      $background-light-lemon 639px,
+      $bg-gradient-color 640px,
       $background-light-lemon 641px,
-      $background-light-lemon 942px,
-      rgba(186, 186, 186, 0.4) 942px,
-      rgba(186, 186, 186, 0.4) 943px,
-      $background-light-lemon 943px,
-      $background-light-lemon 1800px
+      $background-light-lemon 941px,
+      $bg-gradient-color 942px,
+      $background-light-lemon 943px
     );
   }
 }
