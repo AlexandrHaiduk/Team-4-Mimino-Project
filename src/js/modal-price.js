@@ -25,8 +25,6 @@ function toggleModalClickOutsidePrice(e) {
 }
 
 const modalOpenPrice = (refs) => {
-  console.log(refs)
-  console.log(123)
   if(refs.openModalBtn)refs.openModalBtn.addEventListener('click', toggleModalPrice);
   if(refs.openModalBtn1)refs.openModalBtn1.addEventListener('click', toggleModalPrice);
   if(refs.openModalBtn2)refs.openModalBtn2.addEventListener('click', toggleModalPrice);
@@ -35,5 +33,3 @@ const modalOpenPrice = (refs) => {
   document.addEventListener('click',toggleModalClickOutsidePrice)
 }
 modalOpenPrice(refsPrice)
-
-
