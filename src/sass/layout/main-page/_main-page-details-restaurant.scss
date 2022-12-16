@@ -229,29 +229,29 @@ button {
   }
 }
 
-.btn {
-  min-width: 236px;
-  height: 48px;
-  margin-left: auto;
-  margin-right: auto;
+// .btn {
+//   min-width: 236px;
+//   height: 48px;
+//   margin-left: auto;
+//   margin-right: auto;
 
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc(20 / 16);
-  letter-spacing: 0.02em;
-  color: $accent-color;
-  background-color: rgba(0, 0, 0, 0.4);
-  border: 2px solid #ffffff;
-  border-radius: 25px;
+//   font-family: 'Montserrat', sans-serif;
+//   font-weight: 700;
+//   font-size: 16px;
+//   line-height: calc(20 / 16);
+//   letter-spacing: 0.02em;
+//   color: $accent-color;
+//   background-color: rgba(0, 0, 0, 0.4);
+//   border: 2px solid #ffffff;
+//   border-radius: 25px;
 
-  cursor: pointer;
+//   cursor: pointer;
 
-  // &:hover,
-  // &:focus {
-  //   background-color: $hover-bgcolor-small-btn;
-  // }
-}
+// &:hover,
+// &:focus {
+//   background-color: $hover-bgcolor-small-btn;
+// }
+// }
 .reserv-table {
   margin-bottom: 16px;
 }
