@@ -45,7 +45,7 @@ button {
 }
 
 .details-restaurant {
-  max-width: 414px;
+  // max-width: 414px;
   max-height: 735px;
 
   // background-color: $dark-bg-section;
@@ -58,7 +58,7 @@ button {
     url(../images/main-page/main-page-details-restaurant/restourant-414.webp);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 414px 735px;
+  background-size: cover;
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -76,7 +76,7 @@ button {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/main-page/main-page-details-restaurant/restourant-1024.webp);
     background-size: contain;
-    background-size: 1024px 620px;
+    // background-size: 1024px 620px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
