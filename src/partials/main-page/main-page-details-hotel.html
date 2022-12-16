@@ -1,40 +1,117 @@
-<section class="main-page-details-hotel">
-  <div class="details-hotel">
-    <div class="container">
-      <ul class="details-hotel__list list">
-        <li>
-          <h2 class="details-hotel__title">Mimino</h2>
-        </li>
-        <li>
-          <h3 class="details-hotel__second-title">Готель</h3>
-        </li>
-        <li>
-          <p class="details-hotel__pre-title">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit.
-          </p>
-        </li>
-      </ul>
-      <div class="details-hotel__wrap">
-        <div class="details-hotel__slider">
-          <div class="details-hotel__pic"></div>
-          <div class="details-hotel__nav">
-            <button class="details-hotel__slider-btn">
-              <svg class="details-hotel__nav-icon" width="32" height="32">
-                <use href="./images/icons/arrows.svg#icon-arrow-left"></use>
-              </svg>
-            </button>
-            <button class="details-hotel__slider-btn">
-              <svg class="details-hotel__nav-icon" width="32" height="32">
-                <use href="./images/icons/arrows.svg#icon-arrow-right"></use>
-              </svg>
-            </button>
-          </div>
+<section class="details-hotel section wow animate__animated animate__fadeInUp">
+  <div class="container">
+    <div class="details-hotel__desc desc">
+      <p class="desc__logo">MIMIHO</p>
+      <h2 class="desc__title">Готель</h2>
+      <p class="desc__lead text-align">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit.
+      </p>
+    </div>
+    <div class="interactiv-wrap">
+
+      <div class="swiper-mini-mod swiper-mini-mod__reverse">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper swiper-wrapper-mini">
+        <!-- Slides -->
+        <div class="swiper-slide swiper-slide-mini">
+          <picture>
+            <source
+              srcset="
+                ./images/slider-mini-mod/slider-mini-mod-4.webp    1x,
+                ./images/slider-mini-mod/slider-mini-mod-4@2x.webp 2x
+              "
+              sizes="(width: 270px)"
+              type="image/webp"
+            />
+
+            <source
+              srcset="
+                ./images/slider-mini-mod/slider-mini-mod-4.jpg    1x,
+                ./images/slider-mini-mod/slider-mini-mod-4@2x.jpg 2x
+              "
+             sizes="(width: 270px)"
+              type="image/jpeg"
+            />
+
+            <img
+              src="./images/slider-mini-mod/slider-mini-mod-4.jpg"
+              alt="image" width="270" height="270"
+            />
+          </picture>
         </div>
-        <div class="details-hotel__btn">
-          <button type="button" class="btn">Забронювати номер</button>
-          <button type="button" class="btn">Переглянути ціни</button>
+
+        <div class="swiper-slide swiper-slide-mini swiper-slide-mini-2">
+          <picture>
+            <source
+              srcset="
+                ./images/slider-mini-mod/slider-mini-mod-5.webp    1x,
+                ./images/slider-mini-mod/slider-mini-mod-5@2x.webp 2x
+              "
+              sizes="(width: 162px)"
+              type="image/webp"
+            />
+
+            <source
+              srcset="
+                ./images/slider-mini-mod/slider-mini-mod-5.jpg    1x,
+                ./images/slider-mini-mod/slider-mini-mod-5@2x.jpg 2x
+              "
+             sizes="(width: 162px)"
+              type="image/jpeg"
+            />
+
+            <img
+              src="./images/slider-mini-mod/slider-mini-mod-5.jpg"
+              alt="image" width="162" height="270"
+            />
+          </picture>
         </div>
+
+        <div class="swiper-slide swiper-slide-mini ">
+          <picture>
+            <source
+              srcset="
+                ./images/slider-mini-mod/slider-mini-mod-6.webp    1x,
+                ./images/slider-mini-mod/slider-mini-mod-6@2x.webp 2x
+              "
+              sizes="(width: 270px)"
+              type="image/webp"
+            />
+
+            <source
+              srcset="
+                ./images/slider-mini-mod/slider-mini-mod-6.jpg    1x,
+                ./images/slider-mini-mod/slider-mini-mod-6@2x.jpg 2x
+              "
+             sizes="(width: 270px)"
+              type="image/jpeg"
+            />
+
+            <img
+              src="./images/slider-mini-mod/slider-mini-mod-6.jpg"
+              alt="image" width="270" height="270"
+            />
+          </picture>
+        </div>
+
+      </div>
+
+      <div class="swiper-button-prev-mini-mod">
+        <svg width="32" height="32">
+          <use href="./images/icons/arrows.svg#icon-arrow-left"></use>
+        </svg>
+      </div>
+      <div class="swiper-button-next-mini-mod">
+        <svg width="32" height="32">
+          <use href="./images/icons/arrows.svg#icon-arrow-right"></use>
+        </svg>
+      </div>
+    </div>
+
+      <div class="btn-wrap">
+        <button class="btn reserv-room" type="button" data-modal-room-open-1>Забронювати номер</button>
+        <a class="btn view-price" href="#">Переглянути ціни</a>
       </div>
     </div>
   </div>
