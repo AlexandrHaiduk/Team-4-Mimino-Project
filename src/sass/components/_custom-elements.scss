@@ -153,3 +153,65 @@ p::selection {
   color: $brown-text-color;
 }
 // -------------CUSTOM-SELECTION-[END]-------------
+
+// -------------BUTTONS-ANIMATION-[START]-------------
+.shadow-pop-tr:hover {
+  animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+@keyframes shadow-pop-tr {
+  0% {
+    box-shadow: 0 0 $brown-text-color, 0 0 $brown-text-color, 0 0 $brown-text-color, 0 0 $brown-text-color, 0 0 $brown-text-color, 0 0 $brown-text-color, 0 0 $brown-text-color, 0 0 $brown-text-color;
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    box-shadow: 1px -1px $brown-text-color, 2px -2px $brown-text-color, 3px -3px $brown-text-color, 4px -4px $brown-text-color, 5px -5px $brown-text-color, 6px -6px $brown-text-color, 7px -7px $brown-text-color, 8px -8px $brown-text-color;
+    transform: translateX(-8px) translateY(8px);
+  }
+}
+
+.shadow-pop-tl:hover {
+  animation: shadow-pop-tl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+@keyframes shadow-pop-tl {
+  0% {
+    box-shadow: 0 0 $brown-text-color, 0 0 $brown-text-color, 0 0 $brown-text-color, 0 0 $brown-text-color, 0 0 $brown-text-color, 0 0 $brown-text-color, 0 0 $brown-text-color, 0 0 $brown-text-color;
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    box-shadow: -1px -1px $brown-text-color, -2px -2px $brown-text-color, -3px -3px $brown-text-color, -4px -4px $brown-text-color, -5px -5px $brown-text-color, -6px -6px $brown-text-color, -7px -7px $brown-text-color, -8px -8px $brown-text-color;
+    transform: translateX(8px) translateY(8px);
+  }
+}
+
+.shadow-pop-br:hover {
+  animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+@keyframes shadow-pop-br {
+  0% {
+    box-shadow: 0 0 $brown-text-color, 0 0 $brown-text-color, 0 0 $brown-text-color, 0 0 $brown-text-color, 0 0 $brown-text-color, 0 0 $brown-text-color, 0 0 $brown-text-color, 0 0 $brown-text-color;
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    box-shadow: 1px 1px $brown-text-color, 2px 2px $brown-text-color, 3px 3px $brown-text-color, 4px 4px $brown-text-color, 5px 5px $brown-text-color, 6px 6px $brown-text-color, 7px 7px $brown-text-color, 8px 8px $brown-text-color;
+    transform: translateX(-8px) translateY(-8px);
+  }
+}
+
+.shadow-pop-bl:hover {
+  animation: shadow-pop-bl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+@keyframes shadow-pop-bl {
+  0% {
+    box-shadow: 0 0 $brown-text-color, 0 0 $brown-text-color, 0 0 $brown-text-color, 0 0 $brown-text-color, 0 0 $brown-text-color, 0 0 $brown-text-color, 0 0 $brown-text-color, 0 0 $brown-text-color;
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    box-shadow: -1px 1px $brown-text-color, -2px 2px $brown-text-color, -3px 3px $brown-text-color, -4px 4px $brown-text-color, -5px 5px $brown-text-color, -6px 6px $brown-text-color, -7px 7px $brown-text-color, -8px 8px $brown-text-color;
+    transform: translateX(8px) translateY(-8px);
+  }
+}
+// -------------BUTTONS-ANIMATION-[END]-------------
