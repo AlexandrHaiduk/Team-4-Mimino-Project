@@ -1,34 +1,52 @@
-<div class="backdrop is-hidden" data-modal-price data-modal-price-1 data-modal-price-2 data-modal-price-3>
-    <div class="modal-price">
-        <button type="button" class="modal__close-button" data-modal-price-close>
-            <svg width="24" height="24">
-                <use href="/src/images/icons/icons.svg#icon-close"></use>
-            </svg>
-        </button>
-        <form class="form-price">
-            <h2 class="form__title">Ціни на номер</h2>
-            <h3 class="form-price__subtitle">Двомісний люкс</h3>
-            <p class="form-price__text">Категорія номеру</p>
-            <div class="form__container">
-                <label class="form__label form__label--select">
-                    <select name="people" class="form-table__input">
-                        <option value="1" selected>1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                    Кількість ночей
-                </label>
+<div
+  class="backdrop is-hidden"
+  data-modal-price
+  data-modal-price-1
+  data-modal-price-2
+  data-modal-price-3
+>
+  <div class="modal-price">
+    <button
+      type="button"
+      class="modal__close-button"
+      name="price close button"
+      data-modal-price-close
+    >
+      <svg width="24" height="24">
+        <use href="/src/images/icons/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <form class="form-price">
+      <h2 class="form__title">Ціни на номер</h2>
+      <h3 class="form-price__subtitle">Двомісний люкс</h3>
+      <p class="form-price__text">Категорія номеру</p>
+      <div class="form__container">
+        <label class="form__label form__label--select">
+          <select name="people" class="form-table__input">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          Кількість ночей
+        </label>
 
-                <label class="form__label">
-                    <input type="number" value="1000" disabled class="form-price__input" />
-                    грн
-                </label>
-            </div>
-            <button type="submit" class="form-button">Забронювати номер</button>
+        <label class="form__label">
+          <input
+            type="number"
+            value="1000"
+            disabled
+            class="form-price__input"
+          />
+          грн
+        </label>
+      </div>
+      <button type="submit" class="form-button" name="book table button">
+        Забронювати номер
+      </button>
 
-            <div></div>
-        </form>
-    </div>
+      <div></div>
+    </form>
+  </div>
 </div>

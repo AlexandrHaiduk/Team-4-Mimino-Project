@@ -12,21 +12,58 @@
             veniam consequat sunt nostrud amet.
           </p>
         </div>
-        <div class="restaurant-image__thumb">
+        <div
+          class="restaurant-image__thumb wow animate__animated animate__fadeInTopRight"
+        >
           <picture class="about-restaurant__picture">
+            <source
+              srcset="
+                ./images/about/restaurant.webp    1x,
+                ./images/about/restaurant_2x.webp 2x
+              "
+              media="(min-width: 1280px)"
+              type="image/webp"
+              width="460"
+            />
+
+            <source
+              srcset="
+                ./images/about/restaurant400.webp    1x,
+                ./images/about/restaurant400_2x.webp 2x
+              "
+              media="(min-width: 1024px)"
+              type="image/webp"
+              width="400"
+            />
+
+            <source
+              srcset="
+                ./images/about/restaurant244.webp    1x,
+                ./images/about/restaurant244_2x.webp 2x
+              "
+              media="(min-width: 414px)"
+              type="image/webp"
+              width="244"
+            />
+
             <source
               srcset="
                 ./images/about/restaurant.jpg    1x,
                 ./images/about/restaurant@2x.jpg 2x
               "
               media="(min-width: 1280px)"
+              type="image/jpeg"
+              width="460"
             />
+
             <source
               srcset="
                 ./images/about/restaurant400.jpg    1x,
                 ./images/about/restaurant400@2x.jpg 2x
               "
               media="(min-width: 1024px)"
+              type="image/jpeg"
+              width="400"
             />
             <source
               srcset="
@@ -34,17 +71,22 @@
                 ./images/about/restaurant244@2x.jpg 2x
               "
               media="(min-width: 414px)"
+              type="image/jpeg"
+              width="244"
             />
             <img
               src="./images/about/restaurant.jpg"
               alt="Зображення ресторану"
+              width="460"
             />
           </picture>
         </div>
       </div>
 
       <div class="about-restaurant__cover">
-        <div class="hall-image__thumb">
+        <div
+          class="hall-image__thumb wow animate__animated animate__fadeInBottomLeft"
+        >
           <picture class="about-restaurant__picture">
             <source
               srcset="./images/about/hall.jpg 1x, ./images/about/hall@2x.jpg 2x"
@@ -56,6 +98,7 @@
                 ./images/about/hall350@2x.jpg 2x
               "
               media="(min-width: 1024px)"
+              width="350"
             />
             <source
               srcset="
@@ -63,8 +106,13 @@
                 ./images/about/hall200@2x.jpg 2x
               "
               media="(min-width: 414px)"
+              width="200"
             />
-            <img src="./images/about/hall.jpg" alt="Зображення холу" />
+            <img
+              src="./images/about/hall.jpg"
+              alt="Зображення холу"
+              width="350"
+            />
           </picture>
         </div>
         <p class="about-restaurant__descr">
@@ -135,6 +183,7 @@
               <img
                 src="./images/slider-mini/slider-mob/img-1-mob.jpeg"
                 alt="image"
+                width="245"
               />
             </picture>
           </div>
@@ -196,6 +245,7 @@
               <img
                 src="./images/slider-mini/slider-mob/img-2-mob.jpeg"
                 alt="image"
+                width="245"
               />
             </picture>
           </div>
@@ -255,6 +305,7 @@
               <img
                 src="./images/slider-mini/slider-mob/img-3-mob.jpeg"
                 alt="image"
+                width="245"
               />
             </picture>
           </div>
@@ -314,6 +365,7 @@
               <img
                 src="./images/slider-mini/slider-mob/img-4-mob.jpeg"
                 alt="image"
+                width="245"
               />
             </picture>
           </div>

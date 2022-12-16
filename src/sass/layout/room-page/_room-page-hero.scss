@@ -47,10 +47,12 @@
 }
 
 .container--hero-room {
-  height: 740px;
-  @include tablet {
-    height: 720px;
-  }
+  position: relative;
+  // height: 740px;
+
+  // @include tablet {
+  //   height: 720px;
+  // }
 }
 
 .hero-room-address {
@@ -115,6 +117,7 @@
   width: 325px;
   z-index: 3;
   text-stroke: 2px black;
+
   @include tablet {
     margin-bottom: 0;
     bottom: 104px;
@@ -143,7 +146,7 @@
 
   @include tablet {
     padding-top: 468px;
-    padding-bottom: 64px;
+    padding-bottom: 104px;
   }
 
   @include desktop {
@@ -157,6 +160,7 @@
   flex-wrap: wrap;
   z-index: 3;
   position: relative;
+  gap: 40px;
 
   @include tablet {
     align-items: flex-end;
@@ -182,7 +186,7 @@
   color: #ffffff;
   @include tablet {
     @include font(16px, 20px, 700, 0.05em);
-    margin-bottom: 0;
+    // margin-bottom: 24px;
     width: 400px;
   }
 }
@@ -212,7 +216,8 @@
     width: 285px;
     height: 56px;
     left: 47px;
-    top: 640px;
+    bottom: 24px;
+    top: auto;
   }
   @include desktop {
     display: none;
