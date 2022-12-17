@@ -92,6 +92,7 @@ table {
   margin: 16px 0;
   text-align: left;
   color: $black;
+  display: block;
 
   @include tablet {
     margin: 20px 0;
